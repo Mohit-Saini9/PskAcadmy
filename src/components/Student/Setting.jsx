@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import { IoToggleOutline, IoToggleSharp } from "react-icons/io5";
+import { LiaToggleOffSolid } from "react-icons/lia";
+
+import { MdToggleOff } from "react-icons/md";
 
 const Setting = () => {
+  const [mode, setMode] = useState(false);
+  const [notification, setNotification] = useState(false);
   return (
     <>
-      <div className="md:max-w-4xl p-4 max-w-screen-lg justify-center   mx-auto ">
+      <div className=" w-full md:max-w-4xl p-4  justify-center   mx-auto ">
         <div className="max-w-full  md:max-w-5xl  text-black/80   h-96  rounded-md mx-auto px-8 space-y-6">
           <h1 className="font-bold text-xl">Settings</h1>
           <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
@@ -17,7 +23,13 @@ const Setting = () => {
               </div>
 
               <div>
-                <button className="">on</button>
+                <button onClick={() => setMode(!mode)}>
+                  {mode ? (
+                    <IoToggleOutline size={30} />
+                  ) : (
+                    <LiaToggleOffSolid size={30} />
+                  )}
+                </button>
               </div>
             </div>
           </div>
@@ -40,7 +52,16 @@ const Setting = () => {
                   </p>
                 </div>
                 <div>
-                  <button className="">on</button>
+                  <button
+                    className=""
+                    onClick={() => setNotification(!notification)}
+                  >
+                    {notification ? (
+                      <IoToggleOutline size={30} />
+                    ) : (
+                      <LiaToggleOffSolid size={30} />
+                    )}
+                  </button>
                 </div>
               </div>
             </div>
@@ -60,9 +81,13 @@ const Setting = () => {
               </span>
               <p className="text-[10px] ">Mange your privacy preferences</p>
             </div>
+          </div>
+          <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
             <div className="text-red-500 my-2">
-              <span className="text-xs font-bold ">Delete Account</span>
-              <p className="text-[10px] ">Permanently delete your account</p>
+              <span className="text-sm font-bold ">Delete Account</span>
+              <p className="text-[10px]  font-semibold ">
+                Permanently delete your account
+              </p>
             </div>
           </div>
         </div>

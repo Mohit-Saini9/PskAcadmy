@@ -2,7 +2,7 @@ import React from "react";
 
 const Courses = () => {
   return (
-    <div className=" max-w-screen md:max-w-screen-lg px-4 mx-auto ">
+    <div className="max-w-4xl px-4 mx-auto ">
       <div className="mt-6 grid grid-cols-2 md:grid-cols-3  gap-4 px-4  border-l-indigo-600">
         <section className="shadow-md p-4 max-w-72   bg-white rounded ">
           <div className="bg-black/70 w-54 h-28 rounded"></div>

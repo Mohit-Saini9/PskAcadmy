@@ -27,7 +27,7 @@ const DashboardHome = () => {
         <SideBar open={open} />
       </aside>
 
-      <div className="md:ml-56  flex-1 justify-center  bg-white/20">
+      <div className="md:ml-56 flex-1 justify-center  bg-white/20">
         <div className="flex shadow bg-white sticky top-0 w-full z-20">
           <button
             className=" md:hidden text-2xl p-2 "
@@ -45,7 +45,7 @@ const DashboardHome = () => {
             </button>
           </div>
         </div>
-        <div className="  md:left-56 w-full max-w-5xl p-4 md:px-0 h-full px-4 mx-auto ">
+        <div className="  md:left-56 w-full max-w-4xl p-4 md:px-0 h-full px-0 mx-auto ">
           {pathname === "/trainer/dashbord" && <Dashbord />}
           {pathname === "/trainer/mycourse" && <Course />}
           {pathname === "/trainer/upload" && <Upload />}
