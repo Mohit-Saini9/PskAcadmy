@@ -13,7 +13,7 @@ const AdminLogin = () => {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
         <form className="bg-white border border-gray-200 w-full max-w-md  rounded- shadow-xl">
           {/* Avatar */}
 

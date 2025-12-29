@@ -1,14 +1,18 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel";
-import { MdArrowRightAlt } from "react-icons/md";
-
+import { MdArrowRightAlt, MdPhotoCamera } from "react-icons/md";
+import { GrAnnounce } from "react-icons/gr";
+import { IoAnalyticsSharp } from "react-icons/io5";
+import { TbMessageChatbot } from "react-icons/tb";
+import { FaPaintBrush } from "react-icons/fa";
+import { MdCode } from "react-icons/md";
 const Main = () => {
   return (
     <>
       <Navbar />
       <Carousel />
-      <div className="pb-4 min-h-40 max-w-5xl mx-auto">
+      <div className="pb-4 min-h-40 max-w-5xl mx-auto px-4">
         <h2 className="text-center text-3xl font-bold mt-4">
           Explore Categories
         </h2>
@@ -16,8 +20,13 @@ const Main = () => {
           Find the perfect course in your field of intrest
         </p>
         <section className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 px-4">
-          <div className=" bg-blue-50 rounded min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75 ">
-            <div className="mt-4">
+          <div className=" bg-blue-50 rounded min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75 pb-4">
+            <div className="flex justify-center  items-center   rounded mt-2">
+              <div className="w-10 h-10 p-2 bg-blue-600 rounded-md ">
+                <MdCode size={24} className=" rounded  text-white mx-auto" />
+              </div>
+            </div>
+            <div className="mt-3 space-y-2 ">
               <h2 className="font-bold">Programming</h2>
               <p className="text-black/60 text-center text-xs font-semibold">
                 120 Courses Avaliable
@@ -29,7 +38,15 @@ const Main = () => {
             </div>
           </div>
           <div className=" bg-pink-50 rounded min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75  ">
-            <div className="mt-4">
+            <div className="flex justify-center  items-center   rounded mt-2">
+              <div className="w-10 h-10 p-2 bg-pink-500 rounded-md ">
+                <FaPaintBrush
+                  size={24}
+                  className=" rounded  text-white mx-auto"
+                />
+              </div>
+            </div>
+            <div className="space-y-2 mt-2 ">
               <h2 className="font-bold">Design</h2>
               <p className="text-black/60 text-center text-xs font-semibold">
                 85 Courses Avaliable
@@ -41,7 +58,15 @@ const Main = () => {
             </div>
           </div>
           <div className=" bg-green-50 rounded min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75   ">
-            <div className="mt-4">
+            <div className="flex justify-center  items-center   rounded mt-2">
+              <div className="w-10 h-10 p-2 bg-green-600 rounded-md ">
+                <TbMessageChatbot
+                  size={24}
+                  className=" rounded  text-white mx-auto"
+                />
+              </div>
+            </div>
+            <div className="space-y-2 mt-2 pb-2">
               <h2 className="font-bold">Artificial Intelligence</h2>
               <p className="text-black/60 text-center text-xs font-semibold">
                 95 Courses Avaliable
@@ -53,7 +78,15 @@ const Main = () => {
             </div>
           </div>
           <div className=" bg-orange-50 rounded min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75   ">
-            <div className="mt-4">
+            <div className="flex justify-center  items-center   rounded mt-2">
+              <div className="w-10 h-10 p-2 bg-orange-500 rounded-md ">
+                <GrAnnounce
+                  size={24}
+                  className=" rounded  text-white mx-auto"
+                />
+              </div>
+            </div>
+            <div className="space-y-2 mt-2 pb-4">
               <h2 className="font-bold">Marketing</h2>
               <p className="text-black/60 text-center text-xs ">
                 73 Courses Avaliable
@@ -65,25 +98,44 @@ const Main = () => {
             </div>
           </div>
           <div className=" bg-purple-50 rounded min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75  ">
-            <div className="mt-4">
+            <div className="flex justify-center  items-center   rounded mt-1 ">
+              <div className="w-10 h-10 p-2 bg-gradient-to-tl from-violet-500 to-purple-700 rounded-md ">
+                <MdPhotoCamera
+                  size={24}
+                  className=" rounded  text-white mx-auto"
+                />
+              </div>
+            </div>
+            <div className="space-y-1 mt-2 pb-2">
               <h2 className="font-bold">Photography</h2>
               <p className="text-black/60 text-center text-xs ">
                 60 Courses Avaliable
               </p>
-              <div className="flex justify-center items-center gap-1 text-purplee-500">
+              <div className="flex justify-center items-center gap-1 text-purple-500">
                 <button className="text-purple-500 text-sm ">Enroll Now</button>
-                <MdArrowRightAlt size={20} />
+                <MdArrowRightAlt
+                  size={20}
+                  className="items-center justify-center"
+                />
               </div>
             </div>
           </div>
-          <div className=" bg-sky-50 rounded min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75  ">
-            <div className="mt-4">
-              <h2 className="font-bold">Photography</h2>
+          <div className=" bg-cyan-50 rounded min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75  ">
+            <div className="flex justify-center  items-center   rounded mt-1">
+              <div className="w-10 h-10 p-2 bg-cyan-500 rounded-md ">
+                <IoAnalyticsSharp
+                  size={24}
+                  className=" rounded  text-white mx-auto"
+                />
+              </div>
+            </div>
+            <div className="space-y-1 mt-1 pb-2">
+              <h2 className="font-bold">Bussiness</h2>
               <p className="text-black/60 text-center text-xs ">
-                60 Courses Avaliable
+                78 Courses Avaliable
               </p>
-              <div className="flex justify-center items-center gap-1 text-purplee-500">
-                <button className="text-blue-300 text-sm ">Enroll Now</button>
+              <div className="flex justify-center items-center gap-1 text-cyan-500 ">
+                <button className="text-sm ">Enroll Now</button>
                 <MdArrowRightAlt size={20} />
               </div>
             </div>
