@@ -7,7 +7,10 @@ const Profile = () => {
         <div className=" mx-auto max-w-xl md:w-60  rounded p-2 my-2   ">
           <div className=" text-center justify-center items-center shadow-md p-3 rounded bg-white h-54  ">
             <div className="justify-center flex items-center ">
-              <img className="w-20 h-20 rounded-full border-2 border-black/80 text-center mt-2" />
+              <img
+                src="https://i.pravatar.cc/150?img=45  "
+                className="w-20 h-20 rounded-full   text-center mt-2"
+              />
             </div>
             <h2>User</h2>
             <p>raman@gmail.com</p>
