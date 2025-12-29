@@ -21,7 +21,7 @@ const Course = () => {
               <IoIosAdd size={20} /> Create New Course
             </button>
           </div>
-          <section className="grid grid-cols-2 md:grid-cols-3 gap-4 ">
+          <section className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4 ">
             <div className="rounded shadow bg-white min-h-60 max-w-72 md:max-w-64    mt-4">
               <iframe
                 src="https://www.youtube.com/embed/xomWdliKKK0?si=RVy5TNRZlleZI8x4"

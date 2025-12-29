@@ -24,11 +24,11 @@ const Navbar = () => {
         ${
           scrolled
             ? " bg-white shadow-md  text-black/80"
-            : "bg-transparent text-white"
+            : "bg-transparent text-blue-500"
         }
       `}
     >
-      <div className="flex items-center justify-between px-10 py-3 ">
+      <div className="flex items-center justify-between px-4 md:px-10 py-3 ">
         <h1
           className={`text-2xl font-bold text-black-700 ${
             scrolled ? "text-blue-600" : "text-blue-600"
@@ -37,7 +37,7 @@ const Navbar = () => {
           PSK Academy
         </h1>
         <button
-          className="md:hidden text-2xl px-4"
+          className="md:hidden text-2xl px-0"
           onClick={() => setOpen(!open)}
         >
           {open ? <IoMdClose /> : <FaBars />}
@@ -46,7 +46,7 @@ const Navbar = () => {
           className={` md:flex gap-6 md:static absolute text-lg font-semibold 
           ${
             open
-              ? "top-14 bg-black/90 flex flex-col w-[90%] px-6 py-4 rounded-md "
+              ? "top-14 bg-black/90 flex flex-col w-[90%] px-4 py-4 rounded-md "
               : "hidden"
           }`}
         >

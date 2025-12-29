@@ -12,7 +12,7 @@ const StudentLogin = () => {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 rounded-md">
         <form className="bg-white border border-gray-200 w-full max-w-md  rounded- shadow-xl">
           {/* Avatar */}
 
