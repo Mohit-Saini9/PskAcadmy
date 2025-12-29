@@ -74,7 +74,7 @@ const SideBar = ({ open }) => {
           }`}
         >
           <div className={`flex flex-col gap-2 w-full `}>
-            <h2 className=" font-bold border-b-2 p-0 md:p-2 w-full mb-0 md:mb-2 text-blue-500 text-xl border-gray-300">
+            <h2 className=" font-bold border-b-2 p-0 md:p-2 w-full mb-0 md:mb-2 text-blue-600 text-xl border-blue-500">
               TrainerHub
             </h2>
             {menu.map((item) => (

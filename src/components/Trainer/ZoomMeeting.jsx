@@ -1,12 +1,14 @@
+import { FaRegShareSquare } from "react-icons/fa";
 import { GrFormSchedule, GrSchedule } from "react-icons/gr";
 import { IoIosAdd } from "react-icons/io";
 import { IoTimeOutline, IoVideocam } from "react-icons/io5";
 import { IoVideocamOutline } from "react-icons/io5";
+import { LuCopy } from "react-icons/lu";
 const ZoomMeeting = () => {
   return (
     <div className=" w-full md:max-w-3xl justify-center mx-auto pb-4">
-      <h1 className="font-bold">Zoom Meetings</h1>
-      <p className="text-xs text-black/50 font-semibold">
+      <h1 className="text-xl font-bold">Zoom Meetings</h1>
+      <p className="text-xs  md:text-sm text-black/50 font-semibold">
         Schedule and manage your your live sessions
       </p>
       <div className="flex flex-col md:flex-row gap-4 mt-4">
@@ -74,7 +76,7 @@ const ZoomMeeting = () => {
           </form>
           <div className="w-full shadow-md bg-white mt-4 rounded-md p-2 pb-4">
             <h2 className="flex gap-1 items-center font-bold">
-              <IoVideocamOutline size={20} className="text-blue-400" />
+              <IoVideocamOutline size={20} className="text-blue-500" />
               Upcoming Meeting
             </h2>
             <div className="bg-blue-100 p-2 rounded-md mt-1">
@@ -102,9 +104,52 @@ const ZoomMeeting = () => {
                   <IoTimeOutline className="text-blue-500" /> 2:00 PM (90 min)
                 </p>
               </div>
-              <button className="bg-green-500 rounded w-full text-sm text-white font-bold p-0.5 mt-1">
-                Publish
-              </button>
+
+              <div className="flex gap-1">
+                <button className="bg-green-500 rounded w-full text-sm text-white font-semibold p-1 mt-1 flex justify-center gap-22 items-center hover:bg-green-600 ">
+                  <FaRegShareSquare className="text-center size-4 " />
+                  joins Meetings
+                </button>
+                <button className="mt-1 p-2  text-sm text-blue-500 bg-blue-200 hover:bg-blue-300 rounded">
+                  <LuCopy />
+                </button>
+              </div>
+            </div>
+            <div className="bg-blue-100 p-2 rounded-md mt-1">
+              <div className="flex justify-between ">
+                <h6 className="text-sm text-black/80 font-medium">
+                  Javascript Advanced Concepts
+                </h6>
+                <button
+                  type="button"
+                  className="bg-green-100 rounded-xl text-xs px-2 font-semibold text-green-500 border border-green-200"
+                >
+                  Scheduled
+                </button>
+              </div>
+              <p className="text-xs text-blue-400 font-semibold">
+                Advanced Javascript Techniques
+              </p>
+
+              <div className="flex  ">
+                <p className="flex  items-center gap-1 text-xs text-black/70 flex-1 w-1/2">
+                  <GrFormSchedule className="size-5 text-blue-500" />
+                  2025-12-24
+                </p>
+                <p className="flex gap-1 items-center text-xs text-black/70 px-1 w-1/2">
+                  <IoTimeOutline className="text-blue-500" /> 3:00 PM (90 min)
+                </p>
+              </div>
+
+              <div className="flex justify-between gap-1">
+                <button className="bg-green-500 rounded w-full text-sm text-white font-semibold p-1 mt-1 flex justify-center gap-2 items-center hover:bg-green-600 ">
+                  <FaRegShareSquare className="text-center size-4 " />
+                  joins Meetings
+                </button>
+                <button className="mt-1 p-2  text-sm text-blue-500 bg-blue-200 hover:bg-blue-300 rounded">
+                  <LuCopy />
+                </button>
+              </div>
             </div>
           </div>
         </div>

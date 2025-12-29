@@ -7,8 +7,8 @@ const Upload = () => {
   return (
     <div className=" flex  justify-center  ">
       <div className="w-full max-w-3xl h-60 ">
-        <h1 className=" font-bold">Upload Lesson</h1>
-        <p className="text-xs font-semibold text-gray-500 mt-2">
+        <h1 className="text-xl  font-bold">Upload Lesson</h1>
+        <p className="text-xs md:text-sm font-semibold text-gray-500 mt-2">
           Add new video lesson to your courses
         </p>
         <form className="mt-4 space-y-4 text-black/70">

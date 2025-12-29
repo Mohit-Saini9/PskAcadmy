@@ -14,7 +14,7 @@ const DashbordHome = () => {
 
   return (
     <>
-      <div className="bg-slate-100 flex min-h-screen   ">
+      <div className="bg-slate-50 flex min-h-screen   ">
         <aside
           className={`fixed  max-w-64 md:flex ${
             open
@@ -37,7 +37,7 @@ const DashbordHome = () => {
               Student Dashboard
             </h1>
           </div>
-          <div className="  md:left-60 md:max-w-5xl w-full p-4 h-full px-4   bg-slate-100">
+          <div className="  md:left-60 md:max-w-5xl w-full p-4 h-full px-4   bg-slate-50">
             {pathname === "/student/dashbord" && <Dashbord />}
             {pathname === "/student/my-course" && <Courses />}
             {pathname === "/student/profile" && <Profile />}

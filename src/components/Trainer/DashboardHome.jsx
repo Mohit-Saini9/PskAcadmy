@@ -16,7 +16,7 @@ const DashboardHome = () => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   return (
-    <div className="bg-slate-50 flex h-screen  ">
+    <div className=" flex min-h-screen bg-slate-50 overflow-y-auto  ">
       <aside
         className={`fixed  max-w-64 md:flex ${
           open
@@ -45,7 +45,7 @@ const DashboardHome = () => {
             </button>
           </div>
         </div>
-        <div className="  md:left-56 w-full max-w-4xl p-4 md:px-0 h-full px-0 mx-auto ">
+        <div className="  md:left-56 w-full max-w-3xl p-4 md:px-0 h-full px-6 mx-auto  ">
           {pathname === "/trainer/dashbord" && <Dashbord />}
           {pathname === "/trainer/mycourse" && <Course />}
           {pathname === "/trainer/upload" && <Upload />}
