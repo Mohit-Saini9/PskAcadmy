@@ -23,13 +23,19 @@ const Navbar = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
         ${
           scrolled
-            ? " bg-white shadow-md  text-black"
+            ? " bg-white shadow-md  text-black/80"
             : "bg-transparent text-white"
         }
       `}
     >
       <div className="flex items-center justify-between px-10 py-3 ">
-        <h1 className="text-2xl font-bold md:text-blue-800">PSK Academy</h1>
+        <h1
+          className={`text-2xl font-bold text-black-700 ${
+            scrolled ? "text-blue-600" : "text-blue-600"
+          }`}
+        >
+          PSK Academy
+        </h1>
         <button
           className="md:hidden text-2xl px-4"
           onClick={() => setOpen(!open)}
@@ -48,7 +54,9 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.path}
-              className="hover:text-blue-400 w-[60%]  hover:bg-[#dbdbdb] px-2 py-1 rounded font-bold"
+              className={`"  hover:text-blue-500 w-[60%]  font-bold px-2 py-1 rounded " ${
+                scrolled ? "text-black font-bold" : "text-white/80  "
+              }`}
             >
               {item.name}
             </Link>

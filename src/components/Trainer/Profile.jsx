@@ -5,7 +5,7 @@ import { IoCameraSharp } from "react-icons/io5";
 
 const Profile = () => {
   return (
-    <div className=" w-full max-w-xl mx-auto">
+    <div className="w-full md:max-w-3xl mx-auto">
       <h1 className="text-xl font-bold">Edit Profile</h1>
       <p className="text-xs  md:text-sm text-black/50 font-semibold">
         Update your personal information
@@ -105,7 +105,7 @@ const Profile = () => {
           </section>
         </div>
 
-        <button className="w-full    bg-blue-500 hover:bg-blue-700   rounded px-4 text-sm text-white items-center flex text-center justify-center p-1 gap-2 ">
+        <button className="w-full    bg-blue-500 hover:bg-blue-700   rounded px-4 text-sm text-white items-center flex text-center justify-center p-2 gap-2 ">
           <FaRegSave size={16} /> Save Changes
         </button>
       </form>
