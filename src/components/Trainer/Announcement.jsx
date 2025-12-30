@@ -23,14 +23,14 @@ const Announcement = () => {
             <input
               type="text"
               placeholder="Enter announcement title"
-              className="w-full border rounded-md px-3 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border rounded-md px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
             <label className="block text-sm font-medium mb-1">
               Select Course
             </label>
-            <select className="w-full border rounded-md px-3 py-1 text-xs bg-white  focus:ring-blue-500">
+            <select className="w-full border rounded-md px-3 py-2 text-xs bg-white  focus:ring-blue-500">
               <option>Select course</option>
               <option>React</option>
               <option>Node.js</option>
@@ -42,7 +42,7 @@ const Announcement = () => {
             <textarea
               rows="4"
               placeholder="Write your announcement..."
-              className="w-full border rounded-md px-3 py-1 text-xs resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+              className="w-full border rounded-md px-3 py-2 text-xs resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
             ></textarea>
           </div>
           <button
