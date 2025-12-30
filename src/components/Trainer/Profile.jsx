@@ -81,7 +81,7 @@ const Profile = () => {
         </div>
         <div className="shadow p-2 bg-white rounded  ">
           <h1 className="font-semibold">Profile Statistics</h1>
-          <section className="grid grid-cols-2 md:flex gap-4 pb-2">
+          <section className="grid grid-cols-2 md:flex gap-4 pb-2 px-2">
             <div className="md:w-1/3  min-h-20 p-2  rounded-lg shadow border border-blue-200 bg-blue-50 mt-2">
               <div className="px-2 ">
                 <span className="text-sm text-gray-500">Total Courses</span>
@@ -105,7 +105,7 @@ const Profile = () => {
           </section>
         </div>
 
-        <button className="w-full    bg-blue-500 hover:bg-blue-700   rounded px-4 text-sm text-white items-center flex text-center justify-center p-2 gap-2 ">
+        <button className="w-full    bg-blue-500 hover:bg-blue-700   rounded px-4 text-sm text-white items-center flex text-center justify-center p-2.5 gap-2 ">
           <FaRegSave size={16} /> Save Changes
         </button>
       </form>

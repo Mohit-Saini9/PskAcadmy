@@ -20,9 +20,7 @@ const DashboardHome = () => {
     <div className=" flex min-h-screen bg-slate-50 overflow-y-auto  ">
       <aside
         className={`fixed  max-w-64 md:flex ${
-          open
-            ? "z-50 fixed  md:my-0  md:static  md:px-0 "
-            : "hidden md:flex h-full"
+          open ? "z-50 fixed  md:my-0  md:static  " : "hidden md:flex h-full"
         }`}
       >
         <SideBar open={open} setOpen={setOpen} />

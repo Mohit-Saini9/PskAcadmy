@@ -20,23 +20,23 @@ const DashbordHome = () => {
         <aside
           className={`fixed  max-w-64 md:flex ${
             open
-              ? "z-50 absolute top-16  md:my-0 md:static px-4 md:px-0 "
+              ? "z-50 absolute   md:my-0 md:static  "
               : "hidden md:flex h-full"
           }`}
         >
-          <SideBar open={open} />
+          <SideBar open={open} setOpen={setOpen} />
         </aside>
 
         <div className="md:ml-60   flex-1 justify-center  bg-white/20">
-          <div className="flex shadow bg-white sticky top-0 w-full  ">
+          <div className="flex shadow bg-white sticky top-0 w-full md:ml-2 ">
             <button
               className=" md:hidden  text-xl p-2 "
               onClick={() => setOpen(!open)}
             >
               {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
             </button>
-            <div className="flex justify-between items-center">
-              <h1 className="items-center md:px-4 sm:p-4  p-3.5 px-2  sm:text-xl md:p-3 md:text-2xl bg-white h-14 font-medium  ">
+            <div className="flex justify-between items-center ">
+              <h1 className="items-center md:px-4  sm:p-4  p-3.5 px-2  sm:text-xl md:p-3 md:text-2xl bg-white h-14 font-medium  ">
                 Student Dashboard
               </h1>
 

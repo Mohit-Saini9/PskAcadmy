@@ -86,8 +86,8 @@ const Dashbord = () => {
               </li>
             </ul>
           </div>
-          <div className="md:w-1/2  shadow min-h-36 p-2 rounded bg-white">
-            <div className="space-y-4">
+          <div className="md:w-1/2  shadow min-h-36 p-2 rounded bg-white ">
+            <div className="space-y-4 pb-2">
               <h1 className="font-bold">Quick Stats</h1>
               <div className="bg-blue-50 rounded p-2 flex justify-between text-sm ">
                 This Week's Enrollment{" "}

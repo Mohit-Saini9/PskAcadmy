@@ -14,7 +14,7 @@ const ZoomMeeting = () => {
         </p>
         <div className="flex flex-col md:flex-row gap-4 mt-4">
           <div className="md:w-full">
-            <form className="shadow bg-white rounded p-2              w-full  space-y-3  text-black/70 font-semibold ">
+            <form className="shadow bg-white rounded p-2              w-full  space-y-3  text-black/70 font-semibold px-2 pb-4 ">
               <h6 className="text-base font-bold flex items-center gap-2">
                 <IoIosAdd className="text-blue-500 size-5" /> Schedule New
                 Mettings
@@ -75,12 +75,12 @@ const ZoomMeeting = () => {
                 Send Announcement
               </button>
             </form>
-            <div className="w-full shadow-md bg-white mt-4 rounded-md p-2 pb-4">
+            <div className="w-full shadow-md bg-white mt-4 rounded-md p-2 pb-4 ">
               <h2 className="flex gap-1 items-center font-bold">
                 <IoVideocamOutline size={20} className="text-blue-500" />
                 Upcoming Meeting
               </h2>
-              <div className="bg-blue-100 p-2 rounded-md mt-1">
+              <div className="bg-blue-100 p-2 rounded-md mt-2">
                 <div className="flex justify-between ">
                   <h6 className="text-sm text-black/80 font-medium">
                     React Hooks Q&A Seesion
@@ -92,7 +92,7 @@ const ZoomMeeting = () => {
                     Scheduled
                   </button>
                 </div>
-                <p className="text-xs text-blue-400 font-semibold">
+                <p className="text-xs text-blue-600 font-semibold">
                   Complete React Masterclass
                 </p>
 
@@ -116,7 +116,7 @@ const ZoomMeeting = () => {
                   </button>
                 </div>
               </div>
-              <div className="bg-blue-100 p-2 rounded-md mt-1">
+              <div className="bg-blue-100 p-2 rounded-md mt-2">
                 <div className="flex justify-between ">
                   <h6 className="text-sm text-black/80 font-medium">
                     Javascript Advanced Concepts
@@ -128,7 +128,7 @@ const ZoomMeeting = () => {
                     Scheduled
                   </button>
                 </div>
-                <p className="text-xs text-blue-400 font-semibold">
+                <p className="text-xs text-blue-500 font-semibold">
                   Advanced Javascript Techniques
                 </p>
 

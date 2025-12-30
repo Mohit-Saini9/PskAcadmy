@@ -1,11 +1,10 @@
-import { MdDashboard } from "react-icons/md";
+import { MdClose, MdDashboard } from "react-icons/md";
 import { MdMenuBook } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FcSettings } from "react-icons/fc";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 
-const SideBar = ({ open }) => {
-  // const [open, setOpen] = useState(false);
+const SideBar = ({ open, setOpen }) => {
   const Navigate = useNavigate();
 
   const menu = [
@@ -42,8 +41,18 @@ const SideBar = ({ open }) => {
             open ? "top-20 bg-white/90 translate-x-0 " : ""
           }`}
         >
-          <div className={`flex flex-col gap-2 w-full `}>
-            <h2 className=" font-bold md:border-b-2 p-2 w-full">LearnHub</h2>
+          <div className={`flex flex-col gap-4 w-full `}>
+            <div className="flex justify-between">
+              <h2 className=" font-bold border-b-2 p-2 w-full border-gray-400">
+                LearnHub
+              </h2>
+              <button
+                className="md:hidden text-xl font-bold"
+                onClick={() => setOpen(!open)}
+              >
+                <MdClose size={25} />
+              </button>
+            </div>
             {menu.map((item) => (
               <NavLink
                 key={item.id}
