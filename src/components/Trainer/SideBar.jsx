@@ -1,4 +1,4 @@
-import { MdDashboard } from "react-icons/md";
+import { MdClose, MdDashboard } from "react-icons/md";
 import { MdMenuBook } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FcSettings } from "react-icons/fc";
@@ -10,7 +10,7 @@ import { IoVideocam } from "react-icons/io5";
 import { IoAnalyticsOutline } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
-const SideBar = ({ open }) => {
+const SideBar = ({ open, setOpen }) => {
   // const [open, setOpen] = useState(false);
   const Navigate = useNavigate();
 
@@ -69,14 +69,17 @@ const SideBar = ({ open }) => {
     <div className="h-screen bg-slate-50 ">
       <div className=" flex flex-col md:flex ">
         <aside
-          className={` flex  w-56  shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-white  transform transition-transform duration-300 ease-in-out${
-            open ? "top-20 bg-white/90 translate-x-0 " : ""
-          }`}
+          className={` flex  w-48 md:w-56   shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-white  transform transition-transform duration-300 ease-in-out`}
         >
           <div className={`flex flex-col gap-2 w-full `}>
-            <h2 className=" font-bold border-b-2 p-0 md:p-2 w-full mb-0 md:mb-2 text-blue-600 text-xl border-blue-500">
-              TrainerHub
-            </h2>
+            <div className="flex justify-between">
+              <h2 className=" font-bold border-b-2 p-0 md:p-2 w-full mb-0 md:mb-2 text-blue-600 text-xl border-blue-500">
+                TrainerHub
+              </h2>
+              <buttton onClick={() => setOpen(!open)}>
+                <MdClose size={25} className="md:hidden text-xl font-bold" />
+              </buttton>
+            </div>
             {menu.map((item) => (
               <NavLink
                 key={item.id}

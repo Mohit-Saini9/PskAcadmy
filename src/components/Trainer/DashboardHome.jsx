@@ -21,11 +21,11 @@ const DashboardHome = () => {
       <aside
         className={`fixed  max-w-64 md:flex ${
           open
-            ? "z-50 absolute top-16  md:my-0 md:static px-4 md:px-0 "
+            ? "z-50 fixed  md:my-0  md:static  md:px-0 "
             : "hidden md:flex h-full"
         }`}
       >
-        <SideBar open={open} />
+        <SideBar open={open} setOpen={setOpen} />
       </aside>
 
       <div className="md:ml-56 flex-1 justify-center  bg-white/20 ">
