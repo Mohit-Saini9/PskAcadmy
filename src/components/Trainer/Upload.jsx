@@ -14,7 +14,7 @@ const Upload = () => {
         <form className="mt-4 space-y-4 text-black/70">
           <div className="shadow px-4 pb-3 p-2 rounded bg-white flex flex-col">
             <label className="text-sm font-semibold">Select Course</label>
-            <select className="md:py-1 border-2 border-gray-300  rounded px-2 mt-1">
+            <select className="md:py-1 py-0.5 border-2 border-gray-300  rounded px-2 mt-1">
               <option value="">Choose a course...</option>
               <option>Css</option>
               <option>Javascript</option>
@@ -27,7 +27,7 @@ const Upload = () => {
             </label>
             <input
               type="text"
-              className="md:py-1 border-2 border-gray-300 rounded px-2 mt-1 placeholder:text-sm"
+              className="py-0.5 md:py-1 border-2 border-gray-300 rounded px-2 mt-1 placeholder:text-sm"
               placeholder="Enter Your Title"
             />
           </div>
@@ -36,7 +36,7 @@ const Upload = () => {
               Lesson Description
             </label>
             <textarea
-              className="md:py-1 border-2 border-gray-300 rounded px-2 mt-1 placeholder:text-sm"
+              className="py-0.5 md:py-1 border-2 border-gray-300 rounded px-2 mt-1 placeholder:text-sm"
               rows={3}
               placeholder="Describe what students wiil Learn..."
             />
@@ -47,7 +47,7 @@ const Upload = () => {
             </label>
             <input
               type="text"
-              className="md:py-1 border-2 border-gray-300 rounded px-2 mt-1 placeholder:text-sm"
+              className="py-0.5 md:py-1 border-2 border-gray-300 rounded px-2 mt-1 placeholder:text-sm"
               placeholder="Enter video caption "
             />
           </div>
@@ -67,7 +67,7 @@ const Upload = () => {
               placeholder="Click to upload or drag and drop "
             />
             <div
-              className=" flex flex-col h-44  md:py-1 border-2 border-dotted border-blue-400 bg-blue-50 rounded px-2 mt-2 placeholder:text-sm text-center justify-center items-center"
+              className=" flex flex-col h-44 py-0.5 md:py-1 border-2 border-dotted border-blue-400 bg-blue-50 rounded px-2 mt-2 placeholder:text-sm text-center justify-center items-center"
               onClick={() => fileRef.current.click()}
             >
               <FiUpload size={25} />

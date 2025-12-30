@@ -58,7 +58,7 @@ const Profile = () => {
               </button>
             </div>
           </form>
-          <div className="shadow-md p-2 min-h-20  bg-white rounded-md items-center">
+          <div className="shadow-md p-2 min-h-20  bg-white/80 rounded-md items-center">
             <h1 className="font-bold md:px-4 px-2">Learning Stats</h1>
             <div className="md:px-4 flex justify-evenly p-2 ">
               <div className=" text-center text-sm">

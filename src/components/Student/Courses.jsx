@@ -6,8 +6,8 @@ import { MdDeleteOutline } from "react-icons/md";
 import { IoIosAdd } from "react-icons/io";
 const Courses = () => {
   return (
-    <div className="max-w-4xl  mx-auto ">
-      <div className="mt-6 grid  sm:grid-cols-2 md:grid-cols-3  gap-4 px-4  border-l-indigo-600 ">
+    <div className="max-w-4xl   ">
+      <div className="mt-6 grid  sm:grid-cols-2 md:grid-cols-3  gap-4 px-4 border-l-indigo-600 ">
         <div className="rounded shadow bg-white max-w-72 md:max-w-64    mt-4">
           <iframe
             src="https://www.youtube.com/embed/xomWdliKKK0?si=RVy5TNRZlleZI8x4"

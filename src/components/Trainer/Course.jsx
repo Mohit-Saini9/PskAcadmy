@@ -1,4 +1,3 @@
-import React from "react";
 import { FaStar, FaUserFriends } from "react-icons/fa";
 import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 import { LiaEditSolid } from "react-icons/lia";
@@ -9,7 +8,7 @@ const Course = () => {
   return (
     <>
       <div className=" flex justify-center   ">
-        <div className=" max-w-3xl w-full ">
+        <div className=" max-w-3xl w-full px-2">
           <div className="flex justify-between items-center">
             <div>
               <h1 className="font-bold text-xl ">My Courses</h1>

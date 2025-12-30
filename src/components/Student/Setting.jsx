@@ -12,8 +12,8 @@ const Setting = () => {
       <div className=" w-full  justify-center   mx-auto  ">
         <div className="w-full  md:max-w-4xl  text-black/80   rounded-md mx-auto md:px-8 md:space-y-6 space-y-4">
           <h1 className="font-bold text-xl">Settings</h1>
-          <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
-            <h3 className="font-bold ">Appearance</h3>
+          <div className="shadow-md p-1.5 px-4  bg-white/90 rounded mt-2">
+            <h2 className="font-bold ">Appearance</h2>
             <div className="flex items-center justify-between py-1">
               <div>
                 <h6 className="text-sm font-bold text-gray-800">Dark mode</h6>
@@ -33,7 +33,7 @@ const Setting = () => {
             </div>
           </div>
           <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
-            <h3 className="font-bold text-gray-800">Notifications</h3>
+            <h2 className="text-md font-bold text-gray-800">Notifications</h2>
             <div className=" items-center justify-between py-1">
               <div>
                 <h6 className="text-sm font-bold text-gray-800">
@@ -68,7 +68,7 @@ const Setting = () => {
             </div>
           </div>
           <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2 ">
-            <h3 className="font-bold ">Account</h3>
+            <h2 className="font-bold ">Account</h2>
             <div className="mb-1">
               <h6 className="text-sm font-bold text-gray-800">
                 Change Password
