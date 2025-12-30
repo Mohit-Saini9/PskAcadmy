@@ -15,12 +15,12 @@ const Dashbord = () => {
           className="grid grid-cols-2 md:flex 
          gap-4 mt-4"
         >
-          <div className="md:w-1/4 border border-blue-100 shadow min-h-28 p-2 py-3 rounded-md bg-blue-50">
+          <div className="md:w-1/4 border border-blue-100 shadow min-h-24 md:min-h-28 p-2 py-3 rounded-md bg-blue-50">
             <div className="bg-blue-400 w-8 md:w-10 ml-2 p-1.5 md:p-2 rounded text-white">
               <FiBookOpen className="size-5 md:size-6" />
             </div>
             <div className="px-2 mt-2">
-              <span className="md:text-sm text-xs text-gray-500">
+              <span className="md:text-sm text-xs font-semibold text-gray-500">
                 Total Courses
               </span>
               <p className="font-bold ">12</p>
