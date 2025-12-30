@@ -3,8 +3,8 @@ import React from "react";
 const Profile = () => {
   return (
     <>
-      <div className="md:flex flex-col   md:flex-row  max-w-4xl  px-4 mx-auto  gap-4 ">
-        <div className=" mx-auto max-w-xl md:w-60  rounded p-2 my-2   ">
+      <div className="md:flex flex-col   md:flex-row  max-w-4xl w-full  md:px-4 mx-auto  gap-4 ">
+        <div className="w-full mx-auto md:max-w-xs rounded p-2 my-2   ">
           <div className=" text-center justify-center items-center shadow-md p-3 rounded bg-white h-54  ">
             <div className="justify-center flex items-center ">
               <img
@@ -19,7 +19,7 @@ const Profile = () => {
             </button>
           </div>
         </div>
-        <div className="space-y-4 mt-4 ">
+        <div className="space-y-4 mt-4 w-full ">
           <form className="shadow-md p-3 min-h-56    max-w-xl bg-white rounded  px-4">
             <h1 className="font-bold ">Persnol Information</h1>
             <div className="space-y-1">
@@ -58,20 +58,24 @@ const Profile = () => {
               </button>
             </div>
           </form>
-          <div className="shadow-md p-2 min-h-20 md:w-screen  max-w-xl bg-white rounded-md ">
-            <h1 className="font-bold px-4">Learning Stats</h1>
-            <div className="px-4 flex justify-evenly p-2 ">
-              <div className=" text-center">
+          <div className="shadow-md p-2 min-h-20  bg-white rounded-md items-center">
+            <h1 className="font-bold md:px-4 px-2">Learning Stats</h1>
+            <div className="md:px-4 flex justify-evenly p-2 ">
+              <div className=" text-center text-sm">
                 <b>12</b>
-                <p className="text-black/80">Course Enrolled</p>
+                <p className="text-black/80 text-xs md:text-sm">
+                  Course Enrolled
+                </p>
               </div>
-              <div className=" text-center">
-                <span className="text-green-600 font-bold text-xl">8</span>
-                <p className="text-black/80">Completed</p>
+              <div className=" text-center text-sm">
+                <span className="text-green-600 font-bold md:text-xl">8</span>
+                <p className="text-black/80 text-xs md:text-sm">Completed</p>
               </div>
-              <div className=" text-center">
-                <span className="text-orange-600 font-bold text-xl">45h</span>
-                <p className="text-black/80">Watch Time</p>
+              <div className=" text-center text-sm">
+                <span className="text-orange-600 font-bold text-md md:text-xl">
+                  45h
+                </span>
+                <p className="text-black/80 text-xs md:text-sm">Watch Time</p>
               </div>
             </div>
           </div>

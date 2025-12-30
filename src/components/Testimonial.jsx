@@ -1,0 +1,126 @@
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+const Testimonial = () => {
+  const reviews = [
+    {
+      id: 1,
+      name: "Aarav Patel",
+      role: "Web Developer",
+      image: "https://i.pravatar.cc/150?img=12",
+      rating: 5,
+      review:
+        "The web development courses are very practical and easy to follow. Helped me build real projects.",
+    },
+    {
+      id: 2,
+      name: "Neha Verma",
+      role: "UI/UX Designer",
+      image: "https://i.pravatar.cc/150?img=32",
+      rating: 5,
+      review:
+        "Clean UI and smooth animations. The UI/UX lessons are well structured and beginner-friendly.",
+    },
+    {
+      id: 3,
+      name: "Rohit Sharma",
+      role: "Data Scientist",
+      image: "https://i.pravatar.cc/150?img=45",
+      rating: 5,
+      review:
+        "Data science content is simple and very useful for real-world analysis and projects.",
+    },
+    {
+      id: 4,
+      name: "Pooja Singh",
+      role: "Web Developer",
+      image: "https://i.pravatar.cc/150?img=47",
+      rating: 5,
+      review:
+        "Great platform for learning React and JavaScript. The explanations are clear and practical.",
+    },
+    {
+      id: 5,
+      name: "Kunal Mehta",
+      role: "UI/UX Designer",
+      image: "https://i.pravatar.cc/150?img=14",
+      rating: 5,
+      review:
+        "The platform itself is a great example of good UI/UX design. Loved the learning flow.",
+    },
+    {
+      id: 6,
+      name: "Anjali Gupta",
+      role: "Data Scientist",
+      image: "https://i.pravatar.cc/150?img=56",
+      rating: 5,
+      review:
+        "Well-organized data science roadmap with practical examples. Very helpful for beginners.",
+    },
+    {
+      id: 7,
+      name: "Mohit Kumar",
+      role: "Web Developer",
+      image: "https://i.pravatar.cc/150?img=22",
+      rating: 5,
+      review:
+        "Easy to navigate website and quality content. Perfect platform to start web development.",
+    },
+  ];
+
+  return (
+    <div className="bg-blue-600 min-h-screen">
+      <div className="py-20 text-center">
+        <h1 className="text-white text-3xl text-center font-medium ">
+          What Our Students Say
+        </h1>
+        <p className="text-white text-xs my-2 font-semibold">
+          Join thousands of statisfied learners who transformed their careers
+        </p>
+      </div>
+      <div className=" min-h-20 max-w-4xl mx-auto flex  overflow-x-auto gap-4">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000 }}
+          loop
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {reviews.map((r) => (
+            <SwiperSlide>
+              <div
+                key={r.id}
+                className="min-h-32 max-w bg-white  rounded shadow p-4"
+              >
+                <div>⭐⭐⭐⭐⭐{r.rating}</div>
+                <div className="text-xs">{r.review}</div>
+                <div className="mt-2 flex gap-4 items-center">
+                  <img
+                    src={r.image}
+                    alt="img"
+                    className=" w-12 h-12 rounded-full"
+                  />
+                  <div className="text-xs">
+                    {r.name}
+                    <p className="text-xs text-blue-500 font-semibold">
+                      {r.role}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  );
+};
+
+export default Testimonial;

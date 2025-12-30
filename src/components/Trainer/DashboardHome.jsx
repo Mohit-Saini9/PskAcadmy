@@ -1,7 +1,7 @@
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { MdLogout } from "react-icons/md";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import SideBar from "./SideBar";
 import Dashbord from "./Dashbord";
@@ -15,6 +15,7 @@ import Profile from "./Profile";
 const DashboardHome = () => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
+  const Naviagte = useNavigate();
   return (
     <div className=" flex min-h-screen bg-slate-50 overflow-y-auto  ">
       <aside
@@ -39,10 +40,18 @@ const DashboardHome = () => {
             <h1 className="items-center   px-4 md:p-3 p-4 text-sm md:text-xl bg-white h-14 font-medium  ">
               Welcome back,Aman
             </h1>
-            <button className=" flex items-center gap-2 bg-red-500 rounded px-2 my-3 mr-4 text-sm text-white hover:bg-red-500 hover:scale-105">
-              <MdLogout size={20} />
-              Log out
-            </button>
+            <div className="flex gap-2">
+              <button
+                className=" px-2 my-3 bg-blue-400 rounded text-sm text-white font-bold hover:bg-blue-500 hover:scale-105"
+                onClick={() => Naviagte("/")}
+              >
+                Home
+              </button>
+              <button className=" flex items-center gap-1 bg-red-500 rounded px-1 my-3 mr-4 text-sm text-white hover:bg-red-500 hover:scale-105">
+                <MdLogout size={20} />
+                Log out
+              </button>
+            </div>
           </div>
         </div>
         <div className="  md:left-56 w-full max-w-3xl p-4 md:px-0 h-full px-6 mx-auto  ">

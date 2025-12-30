@@ -9,19 +9,18 @@ const Setting = () => {
   const [notification, setNotification] = useState(false);
   return (
     <>
-      <div className=" w-full md:max-w-4xl p-4  justify-center   mx-auto ">
-        <div className="max-w-full  md:max-w-5xl  text-black/80   h-96  rounded-md mx-auto px-8 space-y-6">
+      <div className=" w-full  justify-center   mx-auto max-h-screen ">
+        <div className="w-full  md:max-w-4xl  text-black/80   rounded-md mx-auto md:px-8 md:space-y-6 space-y-4">
           <h1 className="font-bold text-xl">Settings</h1>
           <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
-            <h3 className="font-bold">Appearance</h3>
+            <h3 className="font-bold ">Appearance</h3>
             <div className="flex items-center justify-between py-1">
               <div>
-                <span className="text-xs font-bold text-black/80">
-                  Dark mode
-                </span>
-                <p className="text-[10px]">Toggle dark mode theme</p>
+                <h6 className="text-sm font-bold text-gray-800">Dark mode</h6>
+                <p className="text-xs font-semibold text-black/60">
+                  Toggle dark mode theme
+                </p>
               </div>
-
               <div>
                 <button onClick={() => setMode(!mode)}>
                   {mode ? (
@@ -34,20 +33,22 @@ const Setting = () => {
             </div>
           </div>
           <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
-            <h3 className="font-bold">Notifications</h3>
+            <h3 className="font-bold text-gray-800">Notifications</h3>
             <div className=" items-center justify-between py-1">
               <div>
-                <span className="text-xs font-bold text-black/80">
+                <h6 className="text-sm font-bold text-gray-800">
                   Email Notification
-                </span>
-                <p className="text-[10px]">Receive course updates via email</p>
+                </h6>
+                <p className="text-xs font-semibold text-black/60">
+                  Receive course updates via email
+                </p>
               </div>
               <div className="flex items-center justify-between py-1.5 ">
                 <div>
-                  <span className="text-xs font-bold text-black/80">
+                  <h6 className="text-sm font-bold text-gray-800">
                     Push Notification
-                  </span>
-                  <p className="text-[10px]">
+                  </h6>
+                  <p className="text-xs font-semibold text-black/60">
                     Get push notifications for new content
                   </p>
                 </div>
@@ -66,26 +67,29 @@ const Setting = () => {
               </div>
             </div>
           </div>
-          <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
-            <h3 className="font-bold">Account</h3>
-
-            <div>
-              <span className="text-xs font-bold text-black/80">
+          <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2 ">
+            <h3 className="font-bold ">Account</h3>
+            <div className="mb-1">
+              <h6 className="text-sm font-bold text-gray-800">
                 Change Password
-              </span>
-              <p className="text-[10px]">Update your account password</p>
+              </h6>
+              <p className="text-xs font-semibold text-black/60">
+                Update your account password
+              </p>
             </div>
-            <div>
-              <span className="text-xs font-bold text-black/80 ">
+            <div className="mb-1">
+              <h6 className="text-sm font-bold text-gray-800 ">
                 Privacy Settings
-              </span>
-              <p className="text-[10px] ">Mange your privacy preferences</p>
+              </h6>
+              <p className="text-xs font-semibold text-black/60">
+                Mange your privacy preferences
+              </p>
             </div>
           </div>
           <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
             <div className="text-red-500 my-2">
-              <span className="text-sm font-bold ">Delete Account</span>
-              <p className="text-[10px]  font-semibold ">
+              <h6 className="text-sm font-bold ">Delete Account</h6>
+              <p className="text-xs font-semibold 0 ">
                 Permanently delete your account
               </p>
             </div>
