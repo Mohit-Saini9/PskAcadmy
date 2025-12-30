@@ -8,13 +8,13 @@ import { MdCode } from "react-icons/md";
 const Categories = () => {
   return (
     <div className="pb-4 h-full max-w-5xl mx-auto px-4 my-auto mt-10 min-h-screen">
-      <h2 className="text-center text-3xl font-bold mt-4">
+      <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold mt-4">
         Explore Categories
       </h2>
       <p className="text-center text-xs text-black/50 font-medium">
         Find the perfect course in your field of intrest
       </p>
-      <section className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-4">
+      <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-4">
         <div className=" bg-blue-50 rounded-md min-h-28 p-2 text-center justify-center shadow-lg hover:scale-105 transition-all duration-75 pb-4 ">
           <div className="flex justify-center  items-center   rounded mt-2 transition-transform duration-700 hover:rotate-[360deg] ">
             <div className="w-10 h-10 p-2 bg-blue-600 rounded-md ">

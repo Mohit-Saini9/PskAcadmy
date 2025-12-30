@@ -69,55 +69,57 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="bg-blue-600 min-h-screen">
-      <div className="py-20 text-center">
-        <h1 className="text-white text-3xl text-center font-medium ">
-          What Our Students Say
-        </h1>
-        <p className="text-white text-xs my-2 font-semibold">
-          Join thousands of statisfied learners who transformed their careers
-        </p>
-      </div>
-      <div className=" min-h-20 max-w-4xl mx-auto flex  overflow-x-auto gap-4">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
-          loop
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        >
-          {reviews.map((r) => (
-            <SwiperSlide>
-              <div
-                key={r.id}
-                className="min-h-32 max-w bg-white  rounded shadow p-4"
-              >
-                <div>⭐⭐⭐⭐⭐{r.rating}</div>
-                <div className="text-xs">{r.review}</div>
-                <div className="mt-2 flex gap-4 items-center">
-                  <img
-                    src={r.image}
-                    alt="img"
-                    className=" w-12 h-12 rounded-full"
-                  />
-                  <div className="text-xs">
-                    {r.name}
-                    <p className="text-xs text-blue-500 font-semibold">
-                      {r.role}
-                    </p>
+    <div className="bg-gradient-to-tr to-blue-300 from bg-blue-600 min-h-screen">
+      <div className="py-20 mx-auto">
+        <div className="py-14 text-center  ">
+          <h1 className="text-white text-2xl md:text-3xl text-center font-medium ">
+            What Our Students Say
+          </h1>
+          <p className="text-white text-sm my-2 px-4">
+            Join thousands of statisfied learners who transformed their careers
+          </p>
+        </div>
+        <div className=" w-full  md:max-w-4xl mx-auto flex  overflow-x-auto gap-4 ">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            loop
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {reviews.map((r) => (
+              <SwiperSlide>
+                <div
+                  key={r.id}
+                  className="h-full max-h-72 max-w-xl space-y-2  mx-4 bg-white  rounded shadow p-4 "
+                >
+                  <div className="w-auto text-sm">⭐⭐⭐⭐⭐{r.rating}</div>
+                  <div className="text-xs ">{r.review}</div>
+                  <div className="mt-4 flex gap-4 items-center">
+                    <img
+                      src={r.image}
+                      alt="img"
+                      className=" w-12 h-12 rounded-full"
+                    />
+                    <div className="text-xs ">
+                      <p>{r.name}</p>
+                      <p className="text-xs text-blue-500 font-semibold">
+                        {r.role}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

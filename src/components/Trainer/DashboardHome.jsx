@@ -47,7 +47,7 @@ const DashboardHome = () => {
               >
                 Home
               </button>
-              <button className=" flex items-center gap-1 bg-red-500 rounded px-1 my-3 mr-4 text-sm text-white hover:bg-red-500 hover:scale-105">
+              <button className=" flex items-center gap-1 bg-red-500 rounded px-1 my-3 mr-4 text-xs sm:&&md:text-sm text-white hover:bg-red-500 hover:scale-105">
                 <MdLogout size={20} />
                 Log out
               </button>

@@ -20,7 +20,9 @@ const Dashbord = () => {
               <FiBookOpen className="size-5 md:size-6" />
             </div>
             <div className="px-2 mt-2">
-              <span className="text-sm text-gray-500">Total Courses</span>
+              <span className="md:text-sm text-xs text-gray-500">
+                Total Courses
+              </span>
               <p className="font-bold ">12</p>
             </div>
           </div>

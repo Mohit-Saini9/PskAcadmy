@@ -10,7 +10,7 @@ const Students = () => {
   return (
     <>
       <div className=" md:max-w-3xl justify-center  flex flex-col md:flex-row gap-4 w-full   mx-auto pb-8 px-4">
-        <div className=" w-full min-h-80   items-center rounded   md:w-[70%] ">
+        <div className=" min-h-80   items-center rounded max-w-5xl mx-auto  md:w-[70%] ">
           <div className=" flex-1 rounded shadow bg-white  p-4">
             <div className="flex  items-center text-sm border-2 p-1 rounded text-gray-600">
               <MdSearch size={16} />
@@ -21,7 +21,7 @@ const Students = () => {
               />
             </div>
           </div>
-          <div className="rounded-md  mt-4  ">
+          <div className="rounded-md  mt-4 ">
             <table className="  min-h-20 w-full border rounded-md border-collapse ">
               <thead className="bg-white">
                 <tr className="text-black/60  border border-b-gray-300 flex p-2 bg-gray-100  space-x-6 md:space-x-4 text-sm md:font-bold">
