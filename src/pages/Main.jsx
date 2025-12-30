@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel";
 import Categories from "./Categories";
 import Testimonial from "../components/Testimonial";
+import Footer from "../components/Footer";
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       <Carousel />
       <Categories />
       <Testimonial />
+      <Footer />
     </div>
   );
 };

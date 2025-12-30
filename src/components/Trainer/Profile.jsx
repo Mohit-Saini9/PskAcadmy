@@ -20,7 +20,7 @@ const Profile = () => {
                   size={30}
                   className="absolute text-2xl top-6 left-6 text-white"
                 />
-                <div className="p-1.5 z-50 rounded-full absolute top-14 left-14 bg-blue-500 ">
+                <div className="p-1.5 z-2 rounded-full absolute top-14 left-14 bg-blue-500 ">
                   <IoCameraSharp size={14} className="text-white" />
                 </div>
               </div>

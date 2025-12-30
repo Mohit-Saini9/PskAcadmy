@@ -1,6 +1,3 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 const Testimonial = () => {
   const reviews = [
     {
@@ -70,7 +67,7 @@ const Testimonial = () => {
 
   return (
     <div className="bg-gradient-to-tr to-blue-300 from bg-blue-600 min-h-screen">
-      <div className="py-20 mx-auto">
+      <div className="py-20 mx-auto  ">
         <div className="py-14 text-center  ">
           <h1 className="text-white text-2xl md:text-3xl text-center font-medium ">
             What Our Students Say
@@ -79,46 +76,31 @@ const Testimonial = () => {
             Join thousands of statisfied learners who transformed their careers
           </p>
         </div>
-        <div className=" w-full  md:max-w-4xl mx-auto flex  overflow-x-auto gap-4 ">
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
-            loop
-            breakpoints={{
-              320: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-          >
+        <div className=" max-w-4xl scroll-smooth overflow-x-auto  scrollbar-hide-x mx-auto">
+          <div className=" w-full max-w-4xl md:max-w-3xl mx-auto   gap-4   flex flex-row  ">
             {reviews.map((r) => (
-              <SwiperSlide>
-                <div
-                  key={r.id}
-                  className="h-full max-h-72 max-w-xl space-y-2  mx-4 bg-white  rounded shadow p-4 "
-                >
-                  <div className="w-auto text-sm">⭐⭐⭐⭐⭐{r.rating}</div>
-                  <div className="text-xs ">{r.review}</div>
-                  <div className="mt-4 flex gap-4 items-center">
-                    <img
-                      src={r.image}
-                      alt="img"
-                      className=" w-12 h-12 rounded-full"
-                    />
-                    <div className="text-xs ">
-                      <p>{r.name}</p>
-                      <p className="text-xs text-blue-500 font-semibold">
-                        {r.role}
-                      </p>
-                    </div>
+              <div
+                key={r.id}
+                className="h-full  min-w-52 max-h-72 min-w-2xl space-y-2  mx-4 bg-white  rounded shadow p-6 "
+              >
+                <div className="w-auto text-sm">⭐⭐⭐⭐⭐{r.rating}</div>
+                <div className="text-xs ">{r.review}</div>
+                <div className="mt-4 flex gap-4 items-center">
+                  <img
+                    src={r.image}
+                    alt="img"
+                    className=" w-12 h-12 rounded-full"
+                  />
+                  <div className="text-xs ">
+                    <p>{r.name}</p>
+                    <p className="text-xs text-blue-500 font-semibold">
+                      {r.role}
+                    </p>
                   </div>
                 </div>
-              </SwiperSlide>
+              </div>
             ))}
-          </Swiper>
+          </div>
         </div>
       </div>
     </div>

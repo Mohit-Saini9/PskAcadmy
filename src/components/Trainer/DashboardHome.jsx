@@ -26,7 +26,7 @@ const DashboardHome = () => {
         <SideBar open={open} setOpen={setOpen} />
       </aside>
 
-      <div className="md:ml-56 flex-1 justify-center  bg-white/20 ">
+      <div className="md:ml-56 flex-1 justify-center  bg-white/20 md:pl-2 ">
         <div className="flex shadow bg-white fixed  w-full z-20">
           <button
             className=" md:hidden text-2xl p-2 "
@@ -34,7 +34,7 @@ const DashboardHome = () => {
           >
             {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
           </button>
-          <div className="flex justify-between w-full  ">
+          <div className="flex justify-between w-full   ">
             <h1 className="items-center    px-4 p-2 md:p-3  sm:text-xs md:text-xl bg-white h-14 font-medium  ">
               Welcome back,Aman
             </h1>
