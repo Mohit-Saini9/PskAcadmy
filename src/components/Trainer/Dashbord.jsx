@@ -42,7 +42,9 @@ const Dashbord = () => {
               <FiDollarSign className="size-5 md:size-6" />
             </div>
             <div className="px-2 mt-2">
-              <span className="text-sm text-gray-500">Total Revenue</span>
+              <span className="md:text-sm text-xs font-semibold">
+                Total Revenue
+              </span>
               <p className="font-bold ">$45,890</p>
             </div>
           </div>
@@ -51,7 +53,9 @@ const Dashbord = () => {
               <IoTrendingUp className="size-5 md:size-6" />
             </div>
             <div className="px-2 mt-2">
-              <span className="text-sm text-gray-500">Any Companies</span>
+              <span className="md:text-sm text-xs font-semibold">
+                Any Companies
+              </span>
               <p className="font-bold ">78%</p>
             </div>
           </div>

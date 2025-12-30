@@ -32,7 +32,9 @@ const Analytics = () => {
               </span>
             </div>
             <div className="px-2 mt-2">
-              <span className="text-sm text-gray-500">Total Views</span>
+              <span className="md:text-sm text-xs font-semibold text-gray-500">
+                Total Views
+              </span>
               <p className="font-bold ">65,310</p>
             </div>
           </div>
@@ -47,7 +49,9 @@ const Analytics = () => {
               </span>
             </div>
             <div className="px-2 mt-2">
-              <span className="text-sm text-gray-500">Avg Companies</span>
+              <span className="md:text-sm text-xs font-semibold text-gray-500">
+                Avg Companies
+              </span>
               <p className="font-bold ">76.8%</p>
             </div>
           </div>
@@ -65,7 +69,9 @@ const Analytics = () => {
               </span>
             </div>
             <div className="px-2 mt-2">
-              <span className="text-sm text-gray-500">Monthly Revenue</span>
+              <span className="md:text-sm text-xs font-semibold text-gray-500">
+                Monthly Revenue
+              </span>
               <p className="font-bold ">$25,600</p>
             </div>
           </div>
@@ -86,7 +92,9 @@ const Analytics = () => {
               </span>
             </div>
             <div className="px-2 mt-2">
-              <span className="text-sm text-gray-500">Growth Rate</span>
+              <span className="md:text-sm text-xs font-semibold text-gray-500">
+                Growth Rate
+              </span>
               <p className="font-bold ">+18.5%</p>
             </div>
           </div>
@@ -111,7 +119,7 @@ const Analytics = () => {
               </div>
             ))}
           </div>
-          <div className="md:w-1/2 shadow  min-h-40 rounded-md p-2 bg-white px-4 pb-4 ">
+          <div className="md:w-1/2 shadow  min-h-40 rounded-md p-2 bg-white px-4 pb-4 space-y-3">
             <h1 className=" font-bold">Course Perfomance</h1>
             <div className="mt-2 shadow px-2 rounded p-2 space-y-2 bg-white/80">
               <div className="flex justify-between">

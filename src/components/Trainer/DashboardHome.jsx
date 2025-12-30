@@ -28,16 +28,16 @@ const DashboardHome = () => {
         <SideBar open={open} />
       </aside>
 
-      <div className="md:ml-56 flex-1 justify-center  bg-white/20">
-        <div className="flex shadow bg-white sticky top-0 w-full z-20">
+      <div className="md:ml-56 flex-1 justify-center  bg-white/20 ">
+        <div className="flex shadow bg-white fixed  w-full z-20">
           <button
             className=" md:hidden text-2xl p-2 "
             onClick={() => setOpen(!open)}
           >
             {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
           </button>
-          <div className="flex justify-between w-full ">
-            <h1 className="items-center   px-4 md:p-3 p-4 text-sm md:text-xl bg-white h-14 font-medium  ">
+          <div className="flex justify-between w-full  ">
+            <h1 className="items-center    px-4 p-2 md:p-3  sm:text-xs md:text-xl bg-white h-14 font-medium  ">
               Welcome back,Aman
             </h1>
             <div className="flex gap-2">
@@ -54,7 +54,7 @@ const DashboardHome = () => {
             </div>
           </div>
         </div>
-        <div className="  md:left-56 w-full max-w-3xl p-4 md:px-0 h-full px-6 mx-auto  ">
+        <div className="  md:left-56 w-full max-w-3xl p-4 md:px-0 px-4 mx-auto py-20 ">
           {pathname === "/trainer/dashbord" && <Dashbord />}
           {pathname === "/trainer/mycourse" && <Course />}
           {pathname === "/trainer/upload" && <Upload />}

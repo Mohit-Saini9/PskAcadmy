@@ -9,7 +9,7 @@ const Course = () => {
   return (
     <>
       <div className=" flex justify-center   ">
-        <div className=" max-w-3xl w-full  ">
+        <div className=" max-w-3xl w-full ">
           <div className="flex justify-between items-center">
             <div>
               <h1 className="font-bold text-xl ">My Courses</h1>
@@ -17,7 +17,7 @@ const Course = () => {
                 Mange and create your courses
               </p>
             </div>
-            <button className="flex items-center gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1 rounded px-2 text-sm text-white">
+            <button className="flex items-center gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-0.5 md:p-1 rounded md:px-2 text-sm text-white">
               <IoIosAdd size={20} /> Create New Course
             </button>
           </div>

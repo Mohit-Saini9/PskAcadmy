@@ -5,12 +5,12 @@ import { IoCameraSharp } from "react-icons/io5";
 
 const Profile = () => {
   return (
-    <div className="w-full md:max-w-3xl mx-auto">
+    <div className="w-full md:max-w-3xl mx-auto ">
       <h1 className="text-xl font-bold">Edit Profile</h1>
       <p className="text-xs  md:text-sm text-black/50 font-semibold">
         Update your personal information
       </p>
-      <form className="min-h-60  p-2 mt-4 space-y-3 px-4">
+      <form className="min-h-60  p-2 mt-4 space-y-3">
         <div className="bg-white shadow rounded p-2 px-4">
           <div className="flex text-center justify-center items-center">
             <div>
