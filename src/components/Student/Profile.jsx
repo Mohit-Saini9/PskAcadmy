@@ -20,7 +20,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="space-y-4 mt-4 w-full ">
-          <form className="shadow-md p-3 min-h-56    max-w-xl bg-white rounded  px-4">
+          <form className="shadow-md p-3 min-h-56     bg-white rounded  px-4">
             <h1 className="font-bold ">Persnol Information</h1>
             <div className="space-y-1">
               <label htmlFor="fullname" className="text-sm ">
@@ -58,20 +58,20 @@ const Profile = () => {
               </button>
             </div>
           </form>
-          <div className="shadow-md p-2 min-h-20  bg-white/80 rounded-md items-center">
+          <div className="shadow-md p-2 min-h-20  bg-white rounded-md items-center">
             <h1 className="font-bold md:px-4 px-2">Learning Stats</h1>
-            <div className="md:px-4 flex justify-evenly p-2 ">
-              <div className=" text-center text-sm">
+            <div className="md:px-4 flex justify-evenly p-2 items-center ">
+              <div className=" text-center text-sm md:text-md">
                 <b>12</b>
                 <p className="text-black/80 text-xs md:text-sm">
                   Course Enrolled
                 </p>
               </div>
-              <div className=" text-center text-sm">
+              <div className=" text-center text-sm md:text-md">
                 <span className="text-green-600 font-bold md:text-xl">8</span>
                 <p className="text-black/80 text-xs md:text-sm">Completed</p>
               </div>
-              <div className=" text-center text-sm">
+              <div className=" text-center text-sm md:text-md">
                 <span className="text-orange-600 font-bold text-md md:text-xl">
                   45h
                 </span>

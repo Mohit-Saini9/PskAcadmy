@@ -4,12 +4,11 @@ import "./App.css";
 import Main from "./pages/Main";
 import StudentLogin from "./pages/StudentLogin";
 import TrainerLogin from "./pages/TrainerLogin";
-// import Navbar from "./components/Navbar";
 
 import DashboardHome from "./components/Trainer/DashboardHome";
 import DashbordHome from "./components/Student/DashboradHome";
 import AdminLogin from "./pages/AdminLogin";
-import Dashbord from "./components/Admin/Dashbord";
+import DashbordHomeA from "./components/Admin/DashbordHomeA";
 
 function App() {
   return (
@@ -22,7 +21,7 @@ function App() {
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/student/*" element={<DashbordHome />} />
           <Route path="/trainer/*" element={<DashboardHome />} />
-          <Route path="/admin/*" element={<Dashbord />} />
+          <Route path="/admin/*" element={<DashbordHomeA />} />
         </Routes>
       </Router>
     </>

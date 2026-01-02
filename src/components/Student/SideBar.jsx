@@ -2,11 +2,9 @@ import { MdClose, MdDashboard } from "react-icons/md";
 import { MdMenuBook } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FcSettings } from "react-icons/fc";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
-const SideBar = ({ open, setOpen }) => {
-  const Navigate = useNavigate();
-
+const SideBar = ({ setOpen }) => {
   const menu = [
     {
       id: "dashbord",
@@ -37,9 +35,9 @@ const SideBar = ({ open, setOpen }) => {
     <div className="h-screen bg-slate-50 ">
       <div className=" flex flex-col md:flex ">
         <aside
-          className={` flex  w-60  shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-white  transform transition-transform duration-300 ease-in-out${
-            open ? "top-20 bg-white/90 translate-x-0 " : ""
-          }`}
+          className={` flex  w-48 md:max-w-56  shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-white  transform transition-transform duration-300 ease-in-out
+            
+          `}
         >
           <div className={`flex flex-col gap-4 w-full `}>
             <div className="flex justify-between">
@@ -62,8 +60,8 @@ const SideBar = ({ open, setOpen }) => {
                 ${isActive ? "bg-blue-400 text-white " : "text-gray-600"}
                       
                 `}
-                //
                 to={`${item.path}`}
+                onClick={() => setOpen(!open)}
               >
                 {item.icon}
                 {item.label}

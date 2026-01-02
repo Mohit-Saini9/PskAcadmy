@@ -66,9 +66,9 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-tr to-blue-300 from bg-blue-600 min-h-screen">
-      <div className="py-20 mx-auto  ">
-        <div className="py-14 text-center  ">
+    <div className="bg-gradient-to-tr to-blue-300 from bg-blue-600 min-h-screen ">
+      <div className="py-14 mx-auto  ">
+        <div className="py-16 text-center  ">
           <h1 className="text-white text-2xl md:text-3xl text-center font-medium ">
             What Our Students Say
           </h1>
@@ -76,7 +76,7 @@ const Testimonial = () => {
             Join thousands of statisfied learners who transformed their careers
           </p>
         </div>
-        <div className=" max-w-4xl scroll-smooth overflow-x-auto  scrollbar-hide-x mx-auto">
+        <div className=" max-w-3xl scroll-smooth overflow-x-auto  scrollbar-hide-x mx-auto">
           <div className=" w-full max-w-4xl md:max-w-3xl mx-auto   gap-4   flex flex-row  ">
             {reviews.map((r) => (
               <div

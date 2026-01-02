@@ -46,7 +46,7 @@ const Navbar = () => {
           className={` md:flex gap-6 md:static absolute text-lg font-semibold 
           ${
             open
-              ? "top-14 bg-black/90 text-white flex flex-col w-[90%] px-4 py-4 rounded-md "
+              ? "top-14 bg-gradient-to-tl from-blue-400 to-blue-700 text-white/90 flex flex-col w-[90%] px-4 py-4 rounded-md z-20 "
               : "hidden"
           }`}
         >
@@ -55,7 +55,9 @@ const Navbar = () => {
               key={item.name}
               to={item.path}
               className={`"  hover:text-blue-500 w-[60%]  font-bold px-2 py-1 rounded " ${
-                scrolled ? "md:text-black font-bold" : "text-blue-400  "
+                scrolled
+                  ? "md:text-black font-bold hover:text-blue-400"
+                  : "md:text-blue-400  "
               }`}
             >
               {item.name}

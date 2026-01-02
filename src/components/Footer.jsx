@@ -10,10 +10,10 @@ import {
 const Footer = () => {
   return (
     <footer
-      className="min-h-60 bg-black/80  text-white p-4 w-full mx-auto 
+      className="min-h-60 bg-black/80  text-white  w-full mx-auto 
    "
     >
-      <div className=" w-full grid  grid-cols-2 md:grid-cols-4 gap-10 md:gap-20 max-w-5xl  mx-auto">
+      <div className=" w-full grid  grid-cols-2 md:grid-cols-4 gap-10 md:gap-20 max-w-5xl  mx-auto p-4">
         <div className="p-2  max-w-xs sm:max-w-xs md:max-w-md min-h-30 text-sm ">
           <h1 className="text-xl font-bold">PSK Acadmy</h1>
           <p className="text-sm mt-2">
@@ -22,15 +22,16 @@ const Footer = () => {
           </p>
           <div className="space-y-2 mt-6">
             <p className="flex items-center gap-2">
-              <MdEmail size={18} className="text-blue-600 " />
+              <MdEmail className="text-blue-600 size-4 " />
 
               <span> contact@gamil..com</span>
             </p>
             <p className="flex items-center gap-2">
-              <MdPhone /> <span>+91 845678964</span>
+              <MdPhone className="text-blue-600 size-4 " />
+              <span>+91 845678964</span>
             </p>
             <p className="flex items-center gap-2">
-              <MdPlace />
+              <MdPlace className="text-blue-600 size-6" />
               <span>123 Learning Street Education City</span>
             </p>
           </div>
@@ -88,8 +89,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      <div className=" flex justify-between max-w-5xl mx-auto text-sm  items-end mt-2">
+      <hr className="border border-black/20  " />
+      <div className=" flex justify-between max-w-5xl mx-auto text-sm  items-end mt-2 py-1 pb-4">
         <div className="">2025 LMS Platform | Designed with care</div>
         <div className="flex gap-4">
           Privacy <span>Terms</span>

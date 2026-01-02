@@ -5,7 +5,7 @@ import { IoTimeOutline } from "react-icons/io5";
 
 const Announcement = () => {
   return (
-    <div className="  w-full max-w-3xl justify-center mx-auto ">
+    <div className="  w-full max-w-4xl justify-center mx-auto ">
       <h1 className="font-bold text-xl">Announcements 7 Live Sessions</h1>
       <p className="text-xs md:text-sm text-black/60 font-semibold">
         Communicate with your students and schedule live sessions

@@ -1,7 +1,4 @@
 import { MdClose, MdDashboard } from "react-icons/md";
-import { MdMenuBook } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
-import { FcSettings } from "react-icons/fc";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { FiBookOpen } from "react-icons/fi";
 import { FaUserFriends } from "react-icons/fa";
@@ -10,8 +7,8 @@ import { IoVideocam } from "react-icons/io5";
 import { IoAnalyticsOutline } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
-const SideBar = ({ open, setOpen }) => {
-  // const [open, setOpen] = useState(false);
+
+const SideBar = ({ setOpen }) => {
   const Navigate = useNavigate();
 
   const menu = [
@@ -71,9 +68,9 @@ const SideBar = ({ open, setOpen }) => {
         <aside
           className={` flex  w-48 md:w-56   shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-white  transform transition-transform duration-300 ease-in-out`}
         >
-          <div className={`flex flex-col gap-3 w-full `}>
+          <div className={`flex flex-col gap-3.5 w-full `}>
             <div className="flex justify-between">
-              <h2 className=" font-bold border-b-2 p-0 md:p-2 w-full mb-0 md:mb-2 text-blue-600 text-xl border-blue-500">
+              <h2 className=" font-bold border-b-2 p-0 md:p-2 w-full mb-0 md:mb-2 text-blue-600 text-xl border-blue-500 pb-3">
                 TrainerHub
               </h2>
               <buttton onClick={() => setOpen(!open)}>
@@ -89,8 +86,8 @@ const SideBar = ({ open, setOpen }) => {
                 ${isActive ? "bg-blue-400 text-white " : "text-gray-600"}
                       
                 `}
-                //
                 to={`${item.path}`}
+                onClick={() => setOpen(!open)}
               >
                 {item.icon}
                 {item.label}

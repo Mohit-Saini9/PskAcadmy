@@ -14,10 +14,8 @@ const StudentLogin = () => {
     <>
       <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 rounded-md">
         <form className="bg-white border border-gray-200 w-full max-w-md  rounded- shadow-xl">
-          {/* Avatar */}
-
           <div className="flex justify-center mt-2"></div>
-          {/* Form Fields */}
+
           <div className="p-4">
             <label className="font-bold">Username</label>
             <input
@@ -51,7 +49,6 @@ const StudentLogin = () => {
             </label>
           </div>
 
-          {/* Footer */}
           <div className="flex justify-between items-center p-4 bg-gray-100">
             <button
               type="button"

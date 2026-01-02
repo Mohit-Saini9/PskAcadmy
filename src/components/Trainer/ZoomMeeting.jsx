@@ -7,14 +7,14 @@ import { LuCopy } from "react-icons/lu";
 const ZoomMeeting = () => {
   return (
     <div className="flex justify-center ">
-      <div className="min-h-screen w-full  md:max-w-3xl pb-4">
+      <div className="min-h-screen w-full  md:max-w-4xl pb-4 ">
         <h1 className="text-xl font-bold">Zoom Meetings</h1>
         <p className="text-xs  md:text-sm text-black/50 font-semibold">
           Schedule and manage your your live sessions
         </p>
         <div className="flex flex-col md:flex-row gap-4 mt-4">
           <div className="md:w-full">
-            <form className="shadow bg-white rounded p-2              w-full  space-y-3  text-black/70 font-semibold px-2 pb-4 ">
+            <form className="shadow bg-white rounded p-2              w-full  space-y-3  text-black/70 font-semibold px-3 pb-4 ">
               <h6 className="text-base font-bold flex items-center gap-2">
                 <IoIosAdd className="text-blue-500 size-5" /> Schedule New
                 Mettings
@@ -26,14 +26,14 @@ const ZoomMeeting = () => {
                 <input
                   type="text"
                   placeholder="Enter announcement title"
-                  className="w-full border rounded-md px-3 py-1 text-xs focus:outline-none focus:ring-2 "
+                  className="w-full border rounded-md px-3 py-2 text-xs focus:outline-none focus:ring-2 "
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">
                   Select Course
                 </label>
-                <select className="w-full border rounded-md px-3 py-1 text-xs  bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-black/80">
+                <select className="w-full border rounded-md px-3 py-2 text-xs  bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-black/80">
                   <option>Select course</option>
                   <option>React</option>
                   <option>Node.js</option>
@@ -46,7 +46,7 @@ const ZoomMeeting = () => {
                   <input
                     type="date"
                     placeholder="Enter announcement title"
-                    className="w-full border rounded-md px-3 py-1 text-xs focus:outline-none focus:ring-2 "
+                    className="w-full border rounded-md px-3 py-2 text-xs focus:outline-none focus:ring-2 "
                   />
                 </div>
                 <div className="w-1/2">
@@ -54,7 +54,7 @@ const ZoomMeeting = () => {
                   <input
                     type="time"
                     placeholder="Enter announcement title"
-                    className="w-full border rounded-md px-3 py-1 text-xs focus:outline-none focus:ring-2 "
+                    className="w-full border rounded-md px-3 py-2 text-xs focus:outline-none focus:ring-2 "
                   />
                 </div>
               </div>
@@ -62,7 +62,7 @@ const ZoomMeeting = () => {
                 <label className="block text-sm font-medium mb-1">
                   Duaration (minutes)
                 </label>
-                <select className="w-full border rounded-md px-3 py-1 text-xs bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select className="w-full border rounded-md px-3 py-2 text-xs bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
                   <option>20 minutes</option>
                   <option>40minutes</option>
                   <option>60minutes</option>
@@ -75,12 +75,12 @@ const ZoomMeeting = () => {
                 Send Announcement
               </button>
             </form>
-            <div className="w-full shadow-md bg-white mt-4 rounded-md p-2 pb-4 ">
+            <div className="w-full shadow-md bg-white mt-4 rounded-md p-2 pb-4 space-y-3 px-3">
               <h2 className="flex gap-1 items-center font-bold">
                 <IoVideocamOutline size={20} className="text-blue-500" />
                 Upcoming Meeting
               </h2>
-              <div className="bg-blue-100 p-2 rounded-md mt-2">
+              <div className="bg-blue-100 p-2 rounded-md ">
                 <div className="flex justify-between ">
                   <h6 className="text-sm text-black/80 font-medium">
                     React Hooks Q&A Seesion
@@ -116,7 +116,7 @@ const ZoomMeeting = () => {
                   </button>
                 </div>
               </div>
-              <div className="bg-blue-100 p-2 rounded-md mt-2">
+              <div className="bg-blue-100 p-2 rounded-md ">
                 <div className="flex justify-between ">
                   <h6 className="text-sm text-black/80 font-medium">
                     Javascript Advanced Concepts

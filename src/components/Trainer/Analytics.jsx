@@ -15,7 +15,7 @@ const Analytics = () => {
   ];
   return (
     <div className="  flex  justify-center ">
-      <div className=" w-full max-w-3xl ">
+      <div className=" w-full max-w-4xl ">
         <h1 className="text-xl font-bold">Analytics</h1>
         <p className="text-sm font-semibold text-gray-500">
           Track your course perfomance and revenue

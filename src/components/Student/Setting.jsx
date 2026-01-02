@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import { IoToggleOutline, IoToggleSharp } from "react-icons/io5";
 import { LiaToggleOffSolid } from "react-icons/lia";
 
-import { MdToggleOff } from "react-icons/md";
-
 const Setting = () => {
   const [mode, setMode] = useState(false);
   const [notification, setNotification] = useState(false);
   return (
     <>
       <div className=" w-full  justify-center   mx-auto  ">
-        <div className="w-full  md:max-w-4xl  text-black/80   rounded-md mx-auto md:px-8 md:space-y-6 space-y-4">
+        <div className="w-full  max-w-4xl  text-black/80   rounded-md mx-auto md:px-8 md:space-y-6 space-y-4">
           <h1 className="font-bold text-xl">Settings</h1>
           <div className="shadow-md p-1.5 px-4  bg-white/90 rounded mt-2">
             <h2 className="font-bold ">Appearance</h2>
@@ -33,8 +31,8 @@ const Setting = () => {
             </div>
           </div>
           <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
-            <h2 className="text-md font-bold text-gray-800">Notifications</h2>
-            <div className=" items-center justify-between py-1">
+            <h2 className="text-xl; font-bold text-gray-800">Notifications</h2>
+            <div className=" items-center justify-between py-1  mt-3">
               <div>
                 <h6 className="text-sm font-bold text-gray-800">
                   Email Notification
@@ -67,9 +65,9 @@ const Setting = () => {
               </div>
             </div>
           </div>
-          <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2 ">
+          <div className="shadow-md p-1.5 px-4  bg-white rounded space-y-4 pb-4">
             <h2 className="font-bold ">Account</h2>
-            <div className="mb-1">
+            <div className="mb-1 mt-2">
               <h6 className="text-sm font-bold text-gray-800">
                 Change Password
               </h6>
@@ -85,8 +83,6 @@ const Setting = () => {
                 Mange your privacy preferences
               </p>
             </div>
-          </div>
-          <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
             <div className="text-red-500 my-2">
               <h6 className="text-sm font-bold ">Delete Account</h6>
               <p className="text-xs font-semibold 0 ">

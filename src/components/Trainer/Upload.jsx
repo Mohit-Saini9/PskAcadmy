@@ -6,7 +6,7 @@ const Upload = () => {
   const fileRef = useRef(null);
   return (
     <div className=" flex  justify-center  ">
-      <div className="w-full max-w-3xl ">
+      <div className="w-full max-w-4xl ">
         <h1 className="text-xl  font-bold">Upload Lesson</h1>
         <p className="text-xs md:text-sm font-semibold text-gray-500 mt-2">
           Add new video lesson to your courses

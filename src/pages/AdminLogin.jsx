@@ -1,9 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
-import Dashbord from "../components/Admin/Dashbord";
-// import { useState } from "react";
 
 const AdminLogin = () => {
-  const Navigaite = useNavigate();
+  const Navigate = useNavigate();
 
   // const [isLogin, setIslogin] = useState(false);
   // const handleLogin = (e) => {
@@ -15,10 +13,8 @@ const AdminLogin = () => {
     <>
       <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
         <form className="bg-white border border-gray-200 w-full max-w-md  rounded- shadow-xl">
-          {/* Avatar */}
-
           <div className="flex justify-center mt-2"></div>
-          {/* Form Fields */}
+
           <div className="p-4">
             <label className="font-bold">Username</label>
             <input
@@ -41,7 +37,7 @@ const AdminLogin = () => {
             <button
               type="submit"
               className="w-full bg-green-600 text-white py-2 my-2 rounded hover:opacity-80"
-              onClick={() => Navigaite("/admin/dashbord")}
+              onClick={() => Navigate("/admin/dashbord")}
             >
               Login
             </button>
@@ -52,12 +48,12 @@ const AdminLogin = () => {
             </label>
           </div>
 
-          {/* Footer */}
+         
           <div className="flex justify-between items-center p-4 bg-gray-100">
             <button
               type="button"
               className="bg-red-500 rounded text-white px-4 py-2"
-              onClick={() => Navigaite(-1)}
+              onClick={() => Navigate(-1)}
             >
               Cancel
             </button>

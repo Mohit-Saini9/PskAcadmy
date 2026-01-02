@@ -6,7 +6,7 @@ import { IoTrendingUp } from "react-icons/io5";
 const Dashbord = () => {
   return (
     <div className="flex justify-center ">
-      <div className="w-full max-w-3xl   ">
+      <div className="w-full max-w-4xl   ">
         <h1 className="text-xl  font-bold">Dashbord Overview</h1>
         <p className="text-sm  text-gray-500">
           Task your teaching perfomance and student engagement
@@ -42,7 +42,7 @@ const Dashbord = () => {
               <FiDollarSign className="size-5 md:size-6" />
             </div>
             <div className="px-2 mt-2">
-              <span className="md:text-sm text-xs font-semibold">
+              <span className="md:text-sm text-xs text-gray-500 font-semibold">
                 Total Revenue
               </span>
               <p className="font-bold ">$45,890</p>
@@ -53,7 +53,7 @@ const Dashbord = () => {
               <IoTrendingUp className="size-5 md:size-6" />
             </div>
             <div className="px-2 mt-2">
-              <span className="md:text-sm text-xs font-semibold">
+              <span className="md:text-sm text-xs text-gray-500 font-semibold">
                 Any Companies
               </span>
               <p className="font-bold ">78%</p>

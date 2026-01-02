@@ -8,20 +8,21 @@ const Course = () => {
   return (
     <>
       <div className=" flex justify-center   ">
-        <div className=" max-w-3xl w-full px-2">
-          <div className="flex justify-between items-center">
-            <div>
+        <div className=" max-w-4xl w-full   mx-auto ">
+          <div className="flex justify-between items-center  ">
+            <div className="">
               <h1 className="font-bold text-xl ">My Courses</h1>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-sm ">
                 Mange and create your courses
               </p>
             </div>
-            <button className="flex items-center gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-0.5 md:p-1 rounded md:px-2 text-sm text-white">
-              <IoIosAdd size={20} /> Create New Course
+            <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-0.5 md:p-1 rounded  text-xs md:text-sm text-white">
+              <IoIosAdd className="size-6" />
+              <span className="text-sm">Create New Course</span>
             </button>
           </div>
-          <section className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4 ">
-            <div className="rounded shadow bg-white min-h-60 max-w-72 md:max-w-64    mt-4">
+          <section className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4 w-full">
+            <div className="rounded shadow bg-white min-h-60 max-w-72    mt-6">
               <iframe
                 src="https://www.youtube.com/embed/xomWdliKKK0?si=RVy5TNRZlleZI8x4"
                 title="YouTube video player"
@@ -29,7 +30,7 @@ const Course = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-                className="rounded-t w-full max-w-72 md:max-w-64"
+                className="rounded-t w-full max-w-72 "
               ></iframe>
               <span></span>
               <div className="p-3">
@@ -59,7 +60,7 @@ const Course = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded shadow bg-white min-h-60 max-w-72 md:max-w-64  mt-4">
+            <div className="rounded shadow  bg-white min-h-60 max-w-72   mt-4">
               <iframe
                 src="https://www.youtube.com/embed/qx9hW8IgLEc?si=JlADwH2qiRmDZxR2"
                 title="YouTube video player"
@@ -67,7 +68,7 @@ const Course = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-                className="rounded-t  w-full max-w-72 md:max-w-64"
+                className="rounded-t  w-full max-w-72 "
               ></iframe>
               <span></span>
               <div className="p-3">
@@ -97,7 +98,7 @@ const Course = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded shadow bg-white min-h-60 max-w-72 md:max-w-64   mt-4">
+            <div className="rounded shadow  bg-white min-h-60 max-w-72    mt-4">
               <iframe
                 src="https://www.youtube.com/embed/NgD4S6BfjNo?si=tqdGaV_nsBiIO-8y"
                 title="YouTube video player"
@@ -105,7 +106,7 @@ const Course = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-                className="rounded-t  w-full max-w-72 md:max-w-64"
+                className="rounded-t  w-full max-w-72 "
               ></iframe>
               <span></span>
               <div className="p-3">
