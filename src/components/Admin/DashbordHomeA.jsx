@@ -1,4 +1,4 @@
-import SideBar from "../admin/SideBar";
+import SideBar from "./Sidebar";
 import { useLocation, useNavigate } from "react-router-dom";
 import Dashbord from "./Dashbord";
 import { MdSearch } from "react-icons/md";
