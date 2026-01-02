@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 const Main = () => {
   return (
-    <div className="bg-slate-50">
+    <div className="">
       <Navbar />
       <Carousel />
       <Categories />

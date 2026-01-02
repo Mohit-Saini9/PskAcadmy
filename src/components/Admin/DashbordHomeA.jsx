@@ -22,28 +22,28 @@ const DashbordHomeA = () => {
     <div className="flex min-h-screen md:gap-1 bg-slate-100 w-full">
       <aside
         className={`  fixed ${
-          open ? " z-50 absolute md:static" : "hidden md:flex"
+          open ? " z-50 absolute md:static " : "hidden md:flex"
         }`}
       >
         <SideBar setOpen={setOpen} />
       </aside>
 
       <div className=" flex-1 shadow  w-full">
-        <div className="flex  fixed bg-white shadow px-2 z-20 ">
+        <div className="flex fixed w-full top-0  bg-white shadow  z-20  px-2">
           <button
             className=" md:hidden  text-xl  "
             onClick={() => setOpen(!open)}
           >
             {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
           </button>
-          <div className=" md:ml-56 bg-white relative md:shadow h-12 p-2 md:fixed flex items-center w-full gap-4 px-4 rounded ">
+          <div className=" md:ml-56 bg-white relative md:shadow h-12 p-2 md:fixed flex items-center w-full gap-2 md:gap-4 md:px-4 rounded ">
             <div className="absolute px-1 items-center">
               <MdSearch className=" size-4 z-10   " />
             </div>
             <input
               type="text"
               placeholder="Search students,course,trainers.."
-              className="md:min-w-60 max-w-60 shadow p-0.5 px-6 outline-none rounded-sm  placeholder:text-sm"
+              className="max-w-52 md:min-w-96 shadow p-0.5 px-6 outline-none rounded-sm  placeholder:text-sm"
             />
             <button
               className="text-sm bg-gray-800 text-white p-1 px-2 md:px-4 rounded font-semibold"

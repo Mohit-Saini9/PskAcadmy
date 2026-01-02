@@ -76,8 +76,8 @@ const Testimonial = () => {
             Join thousands of statisfied learners who transformed their careers
           </p>
         </div>
-        <div className=" max-w-3xl scroll-smooth overflow-x-auto  scrollbar-hide-x mx-auto">
-          <div className=" w-full max-w-4xl md:max-w-3xl mx-auto   gap-4   flex flex-row  ">
+        <div className="no-scrollbar max-w-3xl scroll-smooth overflow-x-auto  no-scrollbar mx-auto">
+          <div className=" w-full max-w-4xl md:max-w-3xl mx-auto   gap-4 px-4  flex  ">
             {reviews.map((r) => (
               <div
                 key={r.id}

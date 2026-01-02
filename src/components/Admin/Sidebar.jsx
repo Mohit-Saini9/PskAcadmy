@@ -76,11 +76,11 @@ const SideBar = ({ setOpen }) => {
     <div className="  ">
       <div className=" flex flex-col md:flex-col  ">
         <aside
-          className={` flex  w-48 md:w-56   shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-gray-900  transform transition-transform duration-300 ease-in-out`}
+          className={` flex  w-48 md:w-56   shadow-md   sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-gray-900  transform transition-transform duration-300 ease-in-out`}
         >
-          <div className={`flex flex-col gap-2 w-full `}>
+          <div className={`flex flex-col gap-3  w-full `}>
             <div className="flex justify-between text-white ">
-              <div className="flex gap-2  items-center md:p-2">
+              <div className="flex gap-3  items-center md:p-2">
                 <div className="bg-blue-800 p-1  rounded size-8  text-center text-white">
                   L
                 </div>
@@ -100,7 +100,7 @@ const SideBar = ({ setOpen }) => {
                 key={item.id}
                 className={({
                   isActive,
-                }) => ` p-2 rounded flex items-center gap-2  cursor-pointer  transition-all scroll-smooth 
+                }) => ` p-2 rounded flex items-center gap-4  cursor-pointer  transition-all scroll-smooth 
                 ${isActive ? "bg-blue-400 text-white " : "text-white "}
                       
                 `}

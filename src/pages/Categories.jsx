@@ -7,7 +7,7 @@ import { MdCode } from "react-icons/md";
 
 const Categories = () => {
   return (
-    <div className="pb-4 h-full max-w-5xl mx-auto px-4 my-auto mt-10 min-h-screen">
+    <div className="pb-4 h-full max-w-5xl mx-auto px-4 my-auto mt-10 min-h-screen ">
       <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold mt-4">
         Explore Categories
       </h2>
@@ -15,7 +15,7 @@ const Categories = () => {
         Find the perfect course in your field of intrest
       </p>
       <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-4">
-        <div className=" bg-blue-50 rounded-md min-h-28 p-2 text-center justify-center shadow-lg hover:scale-105 transition-all duration-75 pb-4 ">
+        <div className=" bg-blue-50 rounded-md min-h-28 p-2 text-center justify-center shadow-md  hover:scale-105 transition-all duration-75 pb-4 ">
           <div className="flex justify-center  items-center   rounded mt-2 transition-transform duration-700 hover:rotate-[360deg] ">
             <div className="w-10 h-10 p-2 bg-blue-600 rounded-md ">
               <MdCode size={24} className=" rounded  text-white mx-auto" />
@@ -33,7 +33,7 @@ const Categories = () => {
           </div>
         </div>
 
-        <div className=" bg-pink-50 rounded-md min-h-28 p-2 text-center justify-center shadow-lg hover:scale-105 transition-all duration-75  ">
+        <div className=" bg-pink-50 rounded-md min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75  ">
           <div className="flex justify-center  items-center   rounded mt-2 transition-transform duration-700 hover:rotate-[360deg]">
             <div className="w-10 h-10 p-2 bg-pink-500 rounded-md ">
               <FaPaintBrush
@@ -54,7 +54,7 @@ const Categories = () => {
           </div>
         </div>
 
-        <div className=" bg-green-50 rounded-md min-h-28 p-2 text-center justify-center shadow-lg hover:scale-105 transition-all duration-75   ">
+        <div className=" bg-green-50 rounded-md min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75   ">
           <div className="flex justify-center  items-center   rounded mt-2  transition-transform duration-700 hover:rotate-[360deg] ">
             <div className="w-10 h-10 p-2 bg-green-600 rounded-md">
               <TbMessageChatbot
@@ -75,7 +75,7 @@ const Categories = () => {
           </div>
         </div>
 
-        <div className=" bg-orange-50 rounded-md min-h-28 p-2 text-center justify-center shadow-lg hover:scale-105 transition-all duration-75   ">
+        <div className=" bg-orange-50 rounded-md min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75   ">
           <div className="flex justify-center  items-center   rounded mt-2 transition-transform duration-700 hover:rotate-[360deg]">
             <div className="w-10 h-10 p-2 bg-orange-500 rounded-md ">
               <GrAnnounce size={24} className=" rounded  text-white mx-auto" />
@@ -93,7 +93,7 @@ const Categories = () => {
           </div>
         </div>
 
-        <div className=" bg-purple-50 rounded-md min-h-28 p-2 text-center justify-center shadow-lg hover:scale-105 transition-all duration-75  ">
+        <div className=" bg-purple-50 rounded-md min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75  ">
           <div className="flex justify-center  items-center   rounded mt-2 transition-transform duration-700 hover:rotate-[360deg]">
             <div className="w-10 h-10 p-2 bg-gradient-to-tl from-violet-500 to-purple-600 rounded-md ">
               <MdPhotoCamera
@@ -114,7 +114,7 @@ const Categories = () => {
           </div>
         </div>
 
-        <div className=" bg-cyan-50 rounded-md min-h-28 p-2 text-center justify-center shadow-lg hover:scale-105 transition-all duration-75  ">
+        <div className=" bg-cyan-50 rounded-md min-h-28 p-2 text-center justify-center shadow-md hover:scale-105 transition-all duration-75  ">
           <div className="flex justify-center  items-center   rounded mt-2 transition-transform duration-700 hover:rotate-[360deg]">
             <div className="w-10 h-10 p-2 bg-cyan-500 rounded-md ">
               <IoAnalyticsSharp

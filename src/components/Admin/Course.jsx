@@ -20,7 +20,7 @@ const Course = () => {
         </div>
 
         <div
-          className="bg-white min-h-30 shadow rounded
+          className="bg-white min-h-30 shadow rounded 
         "
         >
           <div className=" pt-1 mt-4   bg-blue-200 sticky ">
