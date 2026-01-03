@@ -1,3 +1,6 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
 const Testimonial = () => {
   const reviews = [
     {
@@ -66,8 +69,8 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-tr to-blue-300 from bg-blue-600 min-h-screen ">
-      <div className="py-14 mx-auto  ">
+    <div className="bg-gradient-to-tr to-blue-300 from bg-blue-600 max-h-screen  pb-10">
+      <div className="py-10 mx-auto  ">
         <div className="py-16 text-center  ">
           <h1 className="text-white text-2xl md:text-3xl text-center font-medium ">
             What Our Students Say
@@ -77,11 +80,22 @@ const Testimonial = () => {
           </p>
         </div>
         <div className="no-scrollbar max-w-3xl scroll-smooth overflow-x-auto  no-scrollbar mx-auto">
-          <div className=" w-full max-w-4xl md:max-w-3xl mx-auto   gap-4 px-4  flex  ">
+          {/* <div className=" w-full max-w-4xl md:max-w-3xl mx-auto   gap-4 px-4  flex  "></div> */}
+
+          <Swiper
+            spaceBetween={16}
+            slidesPerView={1}
+            grabCursor={true}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
             {reviews.map((r) => (
-              <div
+              <SwiperSlide
                 key={r.id}
-                className="h-full  min-w-52 max-h-72 min-w-2xl space-y-2  mx-4 bg-white  rounded shadow p-6 "
+                className="h-full  min-w-52 max-h-72  space-y-2  mx-4 bg-white  rounded shadow p-6 "
               >
                 <div className="w-auto text-sm">⭐⭐⭐⭐⭐{r.rating}</div>
                 <div className="text-xs ">{r.review}</div>
@@ -98,9 +112,9 @@ const Testimonial = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
       </div>
     </div>

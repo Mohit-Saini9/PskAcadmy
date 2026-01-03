@@ -8,7 +8,7 @@ const Course = () => {
   return (
     <>
       <div className=" flex justify-center   ">
-        <div className=" max-w-4xl w-full   mx-auto ">
+        <div className=" max-w-5xl w-full   mx-auto ">
           <div className="flex justify-between items-center  ">
             <div className="">
               <h1 className="font-bold text-xl ">My Courses</h1>

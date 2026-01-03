@@ -73,10 +73,10 @@ const SideBar = ({ setOpen }) => {
     },
   ];
   return (
-    <div className="  ">
-      <div className=" flex flex-col md:flex-col  ">
+    <div className=" h-screen ">
+      <div className=" h-screen flex flex-col   ">
         <aside
-          className={` flex  w-48 md:w-56   shadow-md   sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-gray-900  transform transition-transform duration-300 ease-in-out`}
+          className={` flex  w-48 md:w-56   shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-gray-900  transform transition-transform duration-300 ease-in-out`}
         >
           <div className={`flex flex-col gap-3  w-full `}>
             <div className="flex justify-between text-white ">

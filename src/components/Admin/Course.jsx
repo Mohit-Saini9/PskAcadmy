@@ -1,9 +1,8 @@
-import React from "react";
 import { MdSearch } from "react-icons/md";
 
 const Course = () => {
   return (
-    <div className=" flex- justify-center   w-full ">
+    <div className="justify-center   w-full ">
       <div className=" max-w-5xl mx-auto ">
         <div className="flex justify-between itemse-center">
           <div>
@@ -44,7 +43,7 @@ const Course = () => {
             </div>
           </div>
           <div className="p-2 px-4 overflow-x-auto max-h-60">
-            <table className="min-w-[500px] md:w-full ">
+            <table className="min-w-[700px] md:w-full table-fixed">
               <thead>
                 <tr className="   border-b-[1.5px] text-black/60 p-2 text-sm">
                   <th colSpan={2} className=" text-left p-1">
@@ -97,8 +96,8 @@ const Course = () => {
                   <td className="p-2">145</td>
                   <td className="p-2">published</td>
                   <td className="p-2">
-                    <div>
-                      <span className="text-blue-500"> View </span>edit
+                    <div className=" gap-2">
+                      <span className="text-blue-500 "> View </span>edit
                     </div>
                   </td>
                 </tr>

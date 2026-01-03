@@ -6,9 +6,13 @@ import { MdDeleteOutline } from "react-icons/md";
 import { IoIosAdd } from "react-icons/io";
 const Courses = () => {
   return (
-    <div className=" flex justify-center w-full  mx-auto 0 ">
-      <div className="max-w-4xl w-full mt-6 grid  sm:grid-cols-2 md:grid-cols-3  gap-4 md:gap-10  border-l-indigo-600 mx-auto ">
-        <div className="rounded shadow bg-white max-w-72     mt-4">
+    <div className=" flex justify-center w-full  mx-auto  ">
+      <div
+        className="max-w-5xl w-full mt-6 
+        grid  
+       sm:grid-cols-2  md:grid-cols-3  gap-4 md:gap-10  border-l-indigo-600 mx-auto "
+      >
+        <div className="rounded shadow bg-white max-w-72  w-full   mt-4">
           <iframe
             src="https://www.youtube.com/embed/xomWdliKKK0?si=RVy5TNRZlleZI8x4"
             title="YouTube video player"
@@ -36,7 +40,7 @@ const Courses = () => {
             </div>
           </div>
         </div>
-        <div className="rounded shadow bg-white min-h-60 max-w-72  mt-4">
+        <div className="rounded shadow bg-white min-h-60 w-full max-w-72  mt-4">
           <iframe
             src="https://www.youtube.com/embed/qx9hW8IgLEc?si=JlADwH2qiRmDZxR2"
             title="YouTube video player"
@@ -64,7 +68,7 @@ const Courses = () => {
             </div>
           </div>
         </div>
-        <div className="rounded shadow bg-white  max-w-72   mt-4">
+        <div className="rounded shadow bg-white  max-w-72 w-full   mt-4">
           <iframe
             src="https://www.youtube.com/embed/NgD4S6BfjNo?si=tqdGaV_nsBiIO-8y"
             title="YouTube video player"
@@ -92,7 +96,6 @@ const Courses = () => {
             </div>
           </div>
         </div>
-        {/* </section> */}
       </div>
     </div>
   );

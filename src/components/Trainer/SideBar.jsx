@@ -73,9 +73,9 @@ const SideBar = ({ setOpen }) => {
               <h2 className=" font-bold border-b-2 p-0 md:p-2 w-full mb-0 md:mb-2 text-blue-600 text-xl border-blue-500 pb-3">
                 TrainerHub
               </h2>
-              <buttton onClick={() => setOpen(!open)}>
+              <button onClick={() => setOpen(!open)}>
                 <MdClose size={25} className="md:hidden text-xl font-bold" />
-              </buttton>
+              </button>
             </div>
             {menu.map((item) => (
               <NavLink

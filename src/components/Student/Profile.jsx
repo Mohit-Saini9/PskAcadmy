@@ -3,7 +3,7 @@ import React from "react";
 const Profile = () => {
   return (
     <>
-      <div className="md:flex flex-col   md:flex-row  max-w-4xl w-full  md:px-4 mx-auto  gap-4 ">
+      <div className="md:flex flex-col   md:flex-row  max-w-5xl w-full   mx-auto  gap-4 ">
         <div className="w-full mx-auto md:max-w-xs rounded p-2 my-2   ">
           <div className=" text-center justify-center items-center shadow-md p-3 rounded bg-white h-54  ">
             <div className="justify-center flex items-center ">

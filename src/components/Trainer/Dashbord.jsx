@@ -6,7 +6,7 @@ import { IoTrendingUp } from "react-icons/io5";
 const Dashbord = () => {
   return (
     <div className="flex justify-center ">
-      <div className="w-full max-w-4xl   ">
+      <div className="w-full max-w-5xl   ">
         <h1 className="text-xl  font-bold">Dashbord Overview</h1>
         <p className="text-sm  text-gray-500">
           Task your teaching perfomance and student engagement

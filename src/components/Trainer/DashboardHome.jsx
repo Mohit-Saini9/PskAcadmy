@@ -20,14 +20,14 @@ const DashboardHome = () => {
     <div className=" flex min-h-screen bg-slate-50  w-full ">
       <aside
         className={`fixed  max-w-64 md:flex ${
-          open ? "z-50 fixed  md:my-0  md:static  " : " hidden md:flex h-full"
+          open ? "z-50 fixed  md:my-0    " : " hidden md:flex "
         }`}
       >
         <SideBar open={open} setOpen={setOpen} />
       </aside>
 
-      <div className="md:ml-56 flex-1 justify-center  bg-white/20 md:pl-2 ">
-        <div className="flex shadow bg-white fixed  w-full z-20 items-center px-2">
+      <div className="md:ml-56 flex-1 w-full justify-center  bg-white/20 md:pl-2 ">
+        <div className="flex  shadow bg-white fixed  w-full z-20 items-center px-2">
           <button
             className=" md:hidden text-2xl p-2 "
             onClick={() => setOpen(!open)}
@@ -52,7 +52,7 @@ const DashboardHome = () => {
             </div>
           </div>
         </div>
-        <div className="  md:left-56 w-full  p-4 md:px-0 px-4 mx-auto py-20 ">
+        <div className="  md:left-60 w-full max-w-5xl  p-4  px-4 mx-auto py-20 overflow-y-auto">
           {pathname === "/trainer/dashbord" && <Dashbord />}
           {pathname === "/trainer/mycourse" && <Course />}
           {pathname === "/trainer/upload" && <Upload />}

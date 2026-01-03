@@ -7,8 +7,8 @@ const Setting = () => {
   const [notification, setNotification] = useState(false);
   return (
     <>
-      <div className=" w-full  justify-center   mx-auto  ">
-        <div className="w-full  max-w-4xl  text-black/80   rounded-md mx-auto md:px-8 md:space-y-6 space-y-4">
+      <div className=" w-full  justify-center   mx-auto ">
+        <div className="w-full  max-w-5xl  text-black/80   rounded-md mx-auto  md:space-y-6 space-y-4">
           <h1 className="font-bold text-xl">Settings</h1>
           <div className="shadow-md p-1.5 px-4  bg-white/90 rounded mt-2">
             <h2 className="font-bold ">Appearance</h2>

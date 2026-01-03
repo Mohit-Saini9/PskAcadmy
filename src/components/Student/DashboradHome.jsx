@@ -15,7 +15,7 @@ const DashbordHome = () => {
   const Naviagte = useNavigate();
 
   return (
-    <div className=" bg-slate-50 flex gap-2  min-h-screen overflow-y-auto    ">
+    <div className=" bg-slate-50 flex   min-h-screen overflow-y-auto    ">
       <aside
         className={`fixed max-w-64  md:flex ${
           open ? "z-50 absolute  " : " hidden  md:flex   h-full"
@@ -24,8 +24,8 @@ const DashbordHome = () => {
         <SideBar setOpen={setOpen} />
       </aside>
 
-      <div className=" justify-center w-full bg-white/20 ">
-        <div className="md:ml-52 flex shadow bg-white fixed w-full  ">
+      <div className="md:ml-56 justify-center  bg-white/20 w-full md:pl-2 ">
+        <div className=" flex shadow bg-white fixed w-full  ">
           <button
             className=" md:hidden  text-xl p-2 "
             onClick={() => setOpen(!open)}
@@ -45,7 +45,7 @@ const DashbordHome = () => {
             </button>
           </div>
         </div>
-        <div className=" md:ml-52  md:max-w-5xl w-full md:px-0 px-4 p-4   mx-auto  py-20 overflow-y-auto ">
+        <div className=" md:left-56  md:max-w-5xl w-full md:px-4 px-4 p-4   mx-auto  py-20 overflow-y-auto ">
           {pathname === "/student/dashbord" && <Dashbord />}
           {pathname === "/student/my-course" && <Courses />}
           {pathname === "/student/profile" && <Profile />}

@@ -5,7 +5,7 @@ import { IoCameraSharp } from "react-icons/io5";
 
 const Profile = () => {
   return (
-    <div className="w-full md:max-w-4xl mx-auto ">
+    <div className="w-full md:max-w-5xl mx-auto ">
       <h1 className="text-xl font-bold px-2">Edit Profile</h1>
       <p className="text-xs  md:text-sm text-black/50 font-semibold px-2">
         Update your personal information

@@ -7,7 +7,7 @@ import { LuCopy } from "react-icons/lu";
 const ZoomMeeting = () => {
   return (
     <div className="flex justify-center ">
-      <div className="min-h-screen w-full  md:max-w-4xl pb-4 ">
+      <div className="min-h-screen w-full  max-w-5xl pb-4 ">
         <h1 className="text-xl font-bold">Zoom Meetings</h1>
         <p className="text-xs  md:text-sm text-black/50 font-semibold">
           Schedule and manage your your live sessions
