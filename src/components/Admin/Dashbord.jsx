@@ -1,7 +1,7 @@
 import { FaArrowUpLong, FaGraduationCap, FaSackDollar } from "react-icons/fa6";
 import { FiUsers } from "react-icons/fi";
 import { IoIosCheckbox } from "react-icons/io";
-import { IoCheckbox } from "react-icons/io5";
+
 import {
   MdAnalytics,
   MdDashboard,
@@ -18,7 +18,7 @@ const Dashbord = () => {
         <div className="flex justify-between">
           <div>
             <h1 className="text-xl  font-bold">Dashbord Overview</h1>
-            <p className="text-sm  text-gray-500">
+            <p className="text-xs font-semibold  text-gray-500">
               Welcome back! Here's what happening today.
             </p>
           </div>
@@ -32,7 +32,7 @@ const Dashbord = () => {
           className="grid grid-cols-2 md:flex 
                  gap-4 mt-5 "
         >
-          <div className="md:w-1/4  min-h-28 p-2 py-3 rounded shadow bg-white px-3.5">
+          <div className="md:w-1/4  min-h-28 p-2 py-3 rounded shadow bg-white px-3.5 ">
             <span className="md:text-sm text-xs font-semibold text-gray-600">
               Total Students
             </span>
@@ -275,13 +275,13 @@ const Dashbord = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white shadow  w-full rounded pb-4">
+          <div className="bg-white shadow  w-full rounded pb-4 ">
             <h1 className=" border-b-black p-2  px-4 font-semibold">
               Quick Actions
             </h1>
             <hr className="border-b" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4  px-4 mt-4 w-full">
-              <div className="  min-h-20 rounded  p-2 pb-4 shadow">
+              <div className="  min-h-20 rounded border-[2px] p-2 pb-4 shadow hover:border-blue-500 hover:bg-blue-50">
                 <div className=" flex justify-center mt-2">
                   <div className="bg-blue-500 w-12 h-12 rounded-full">
                     <MdMenuBook className="text-red-500 items-center flex  size-7 mt-2 mx-auto  justify-center" />
@@ -294,7 +294,7 @@ const Dashbord = () => {
                 </div>
               </div>
 
-              <div className=" shadow min-h-20 rounded  p-2 pb-4">
+              <div className=" shadow min-h-20 rounded border-[2px]  p-2 pb-4 hover:border-blue-500 hover:bg-blue-50">
                 <div className=" flex justify-center mt-2 ">
                   <div className="bg-green-500 w-12 h-12 rounded-full">
                     <FaGraduationCap className="text-gray-900 items-center flex  size-7 mt-2 mx-auto  justify-center" />
@@ -307,7 +307,7 @@ const Dashbord = () => {
                 </div>
               </div>
 
-              <div className=" shadow min-h-20 rounded  p-2 pb-4">
+              <div className=" shadow min-h-20 rounded border-[2px] p-2 pb-4 hover:border-blue-500 hover:bg-blue-50">
                 <div className=" flex justify-center mt-2 ">
                   <div className="bg-purple-500 w-12 h-12 rounded-full">
                     <MdLiveTv className="text-gray-800 items-center flex  size-7 mt-2 mx-auto  justify-center" />
@@ -320,7 +320,7 @@ const Dashbord = () => {
                 </div>
               </div>
 
-              <div className=" shadow min-h-20 rounded  p-2 pb-4">
+              <div className=" shadow min-h-20 rounded border-[2px] p-2 pb-4 hover:border-blue-500 hover:bg-blue-50">
                 <div className=" flex justify-center mt-2 ">
                   <div className="bg-amber-500 w-12 h-12 rounded-full">
                     <MdWorkspacePremium className="text-blue-500 items-center flex  size-7 mt-2 mx-auto  justify-center" />

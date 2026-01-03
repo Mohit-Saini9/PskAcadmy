@@ -21,7 +21,7 @@ const Students = () => {
           </div>
           <div className=" shadow rounded-md  mt-4   overflow-x-auto  min-h-20 max-h-60 md:max-h-full ">
             <table className="min-h-30 min-w-[400px]  md:min-w-[500px] border-collapse rounded  ">
-              <thead className="bg-gray-100 top-0 sticky  z-10">
+              <thead className="bg-blue-100 top-0 sticky  z-10">
                 <tr className="text-black/60  border border-b    text-sm md:font-bold ">
                   <th className="p-2 min-w-40 text-left">Student</th>
                   <th className="p-2 min-w-24 text-center">Courses</th>
@@ -35,9 +35,9 @@ const Students = () => {
                   <tr
                     key={student.id}
                     className=" bg-white border border-b  
-                    py-2     "
+                    py-2  hover:bg-gray-100   "
                   >
-                    <td className="p-2 min-w-40 text-xs md:text-sm">
+                    <td className="p-2 min-w-40 text-xs md:text-sm ">
                       <div className="flex  items-center ">
                         <img
                           src={student.image}

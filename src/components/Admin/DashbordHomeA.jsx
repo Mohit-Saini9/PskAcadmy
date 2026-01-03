@@ -19,7 +19,7 @@ const DashbordHomeA = () => {
   const { pathname } = useLocation();
   const Navigate = useNavigate();
   return (
-    <div className="flex min-h-screen md:gap-1 bg-slate-100 w-full">
+    <div className="flex min-h-screen md:gap-1 bg-slate-50 w-full">
       <aside className={`  fixed ${open ? " z-50 fixed  " : "hidden md:flex"}`}>
         <SideBar setOpen={setOpen} />
       </aside>
