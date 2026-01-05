@@ -92,7 +92,7 @@ const SideBar = ({ setOpen }) => {
                 </div>
               </div>
               <button onClick={() => setOpen(!open)}>
-                <MdClose size={25} className="md:hidden text-xl font-bold" />
+                <MdClose size={30} className="md:hidden text-xl font-bold" />
               </button>
             </div>
             {menu.map((item) => (
