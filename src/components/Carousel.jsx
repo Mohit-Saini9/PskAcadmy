@@ -9,7 +9,6 @@ const Carousel = () => {
         slidesPerView={1}
         spaceBetween={30}
         autoplay={{ delay: 3000 }}
-        navigation
         pagination={{ clickable: true }}
         loop
       >
