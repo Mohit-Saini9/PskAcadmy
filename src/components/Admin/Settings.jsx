@@ -122,7 +122,7 @@ const Settings = () => {
             <hr />
             <div className=" px-4 p-2  mt-1 space-y-2">
               <div className="space-y-1">
-                <p className="text-xs font-semibold">
+                <p className="text-sm font-semibold">
                   Session Timeout (minutes)
                 </p>
                 <input
@@ -136,13 +136,13 @@ const Settings = () => {
               </div>
               <div className="flex items-center gap-2">
                 <input type="checkbox" />
-                <p className="text-xs  font-semibold text-black/90 items-center">
+                <p className="text-sm  font-semibold text-black/90 items-center">
                   Required Strong Password
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <input type="checkbox" />
-                <p className="text-xs  font-semibold text-black/90 items-center">
+                <p className="text-sm  font-semibold text-black/90 items-center">
                   Enable Two-factor authentication
                 </p>
               </div>
@@ -258,7 +258,7 @@ const Settings = () => {
             <div className=" px-4 p-2  mt-1 space-y-2">
               <div className="flex items-center gap-2">
                 <input type="checkbox" />
-                <p className="text-xs  font-semibold text-black/90 items-center">
+                <p className="text-sm  font-semibold text-black/90 items-center">
                   Enable Email notifications
                 </p>
               </div>
@@ -295,26 +295,26 @@ const Settings = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 ">
                 <input type="checkbox" />
-                <p className="text-xs  font-semibold text-black/90 items-center">
+                <p className="text-sm  font-semibold text-black/90 items-center">
                   New Student registration
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <input type="checkbox" />
-                <p className="text-xs  font-semibold text-black/90 items-center">
+                <p className="text-sm  font-semibold text-black/90 items-center">
                   Course enrollment
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <input type="checkbox" />
-                <p className="text-xs  font-semibold text-black/90 items-center">
+                <p className="text-sm  font-semibold text-black/90 items-center">
                   Certifiacte issued
                 </p>
               </div>
 
-              <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1 px-2  rounded  text-xs md:text-sm text-white">
+              <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1 px-2  rounded  text-sm text-white">
                 Save Email Settings
               </button>
             </div>
@@ -327,12 +327,12 @@ const Settings = () => {
             <div className="p-2 px-4  mt-1 space-y-2">
               <div className="flex items-center gap-2 ">
                 <input type="checkbox" />
-                <p className="text-xs  font-semibold text-black/90 items-center">
+                <p className="text-sm  font-semibold text-black/90 items-center">
                   Enable SMS notifications
                 </p>
               </div>
 
-              <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1 px-2  rounded  text-xs md:text-sm text-white">
+              <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1 px-2  rounded  text-sm text-white">
                 Save SMS Settings
               </button>
             </div>
