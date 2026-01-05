@@ -75,7 +75,7 @@ const ZoomMeeting = () => {
                 Send Announcement
               </button>
             </form>
-            <div className="w-full shadow-md bg-white mt-4 rounded-md p-2 pb-4 space-y-3 px-3">
+            <div className="w-full shadow-md bg-white mt-4 rounded-md p-2 pb-6  space-y-4 px-3">
               <h2 className="flex gap-1 items-center font-bold">
                 <IoVideocamOutline size={20} className="text-blue-500" />
                 Upcoming Meeting
@@ -178,7 +178,7 @@ const ZoomMeeting = () => {
                 <p className="text-orange-500 font-bold">87%</p>
               </div>
             </div>
-            <div className="shadow bg-white rounded-md p-3 px-4 ">
+            <div className="shadow bg-white rounded-md p-3 px-4 pb-4">
               <h4 className="font-semibold">Past Meetings</h4>
               <div className="bg-gray-50 p-2 rounded-md space-y-1 mt-2 border border-gray-200 ">
                 <h5 className="text-xs font-semibold">

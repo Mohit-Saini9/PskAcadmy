@@ -12,7 +12,7 @@ const Conetent = () => {
           </p>
         </div>
         <div>
-          <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1.5 px-4 rounded  text-xs md:text-sm text-white">
+          <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1 md:p-1.5 px-4 rounded  text-xs md:text-sm text-white">
             Upload Content
           </button>
         </div>

@@ -12,10 +12,10 @@ const Students = () => {
       <div className="flex flex-col md:flex-row gap-4  rounded max-w-5xl mx-auto   ">
         <div className=" flex-1 w-full md:w-[70%]  rounded shadow bg-white  p-2">
           <div className="flex items-center text-sm border-2 p-1 rounded text-gray-600">
-            <MdSearch size={16} />
+            <MdSearch size={20} />
             <input
               type="text"
-              className="outline-none px-2 w-full bg-white"
+              className="outline-none px-2 py-0.5 w-full bg-white"
               placeholder="search students by name or email ... "
             />
           </div>
@@ -112,7 +112,7 @@ const Students = () => {
             <p className="text-xs text-gray-700">10 min ago</p>
           </div>
           <div className="pb-2">
-            <button className="w-full  text-center   bg-blue-500 hover:bg-blue-700  p-1 md:p-2 rounded px-4 text-sm text-white hover:scale-105 ">
+            <button className="w-full  text-center   bg-blue-500 hover:bg-blue-700  p-2 rounded px-4 text-sm text-white hover:scale-105 ">
               View All Messsages
             </button>
           </div>

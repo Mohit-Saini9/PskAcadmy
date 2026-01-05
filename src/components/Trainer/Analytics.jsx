@@ -119,7 +119,7 @@ const Analytics = () => {
               </div>
             ))}
           </div>
-          <div className="md:w-1/2 shadow  min-h-40 rounded-md p-2 bg-white px-4 pb-4 space-y-3">
+          <div className="md:w-1/2 shadow  min-h-40 rounded-md p-2 bg-white px-4 pb-6 space-y-3">
             <h1 className=" font-bold">Course Perfomance</h1>
             <div className="mt-2 shadow px-2 rounded p-2 space-y-2 bg-white/80">
               <div className="flex justify-between">
