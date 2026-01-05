@@ -32,7 +32,7 @@ const DashboardHome = () => {
             className=" md:hidden text-2xl p-2 "
             onClick={() => setOpen(!open)}
           >
-            {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
+            {open ? <IoMdClose size={30} /> : <FaBars size={30} />}
           </button>
           <div className="flex justify-between    ">
             <h1 className="items-center    px-4 p-3    sm:text-md md:text-xl bg-white h-14 font-medium  ">

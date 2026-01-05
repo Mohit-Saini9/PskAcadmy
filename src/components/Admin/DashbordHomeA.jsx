@@ -30,7 +30,7 @@ const DashbordHomeA = () => {
             className=" md:hidden  text-xl  "
             onClick={() => setOpen(!open)}
           >
-            {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
+            {open ? <IoMdClose size={30} /> : <FaBars size={30} />}
           </button>
           <div className=" md:ml-56 bg-white relative md:shadow h-14 p-2 md:fixed flex items-center w-full gap-2 md:gap-4 md:px-4 rounded ">
             <div className="absolute px-1 items-center">

@@ -40,7 +40,7 @@ const Navbar = () => {
           className="md:hidden text-2xl px-0"
           onClick={() => setOpen(!open)}
         >
-          {open ? <IoMdClose /> : <FaBars />}
+          {open ? <IoMdClose size={30} /> : <FaBars size={30} />}
         </button>
         <nav
           className={` md:flex gap-6 md:static absolute text-lg font-semibold 
