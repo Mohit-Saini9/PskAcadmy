@@ -25,14 +25,14 @@ const DashbordHomeA = () => {
       </aside>
 
       <div className=" flex-1 shadow  w-full">
-        <div className="flex fixed w-full top-0  bg-white shadow  z-20  px-2">
+        <div className="flex fixed w-full top-0  bg-white shadow  z-20  px-2 gap-1">
           <button
             className=" md:hidden  text-xl  "
             onClick={() => setOpen(!open)}
           >
             {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
           </button>
-          <div className=" md:ml-56 bg-white relative md:shadow h-12 p-2 md:fixed flex items-center w-full gap-2 md:gap-4 md:px-4 rounded ">
+          <div className=" md:ml-56 bg-white relative md:shadow h-14 p-2 md:fixed flex items-center w-full gap-2 md:gap-4 md:px-4 rounded ">
             <div className="absolute px-1 items-center">
               <MdSearch className=" size-4 z-10   " />
             </div>

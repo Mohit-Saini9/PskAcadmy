@@ -3,22 +3,22 @@ import { FaArrowUpLong, FaBarsProgress, FaChartLine } from "react-icons/fa6";
 import { FiUsers } from "react-icons/fi";
 
 const Reports = () => {
-  const [show, setShow] = useState(false);
+  const [active, setActive] = useState("students");
   return (
     <div>
-      <div className="flex justify-between itemse-center">
-        <div>
+      <div className="flex flex-col  md:flex-row  md:justify-between mditems-center  ">
+        <div className="w-full md:w-auto">
           <h1 className="text-xl  font-bold">Report & Analytics</h1>
-          <p className="text-xs  text-gray-500 font-semibold">
+          <p className="text-sm  text-gray-500 font-semibold">
             View detailed reports and analytics
           </p>
         </div>
 
-        <div className=" flex gap-2 mt-2">
+        <div className=" flex gap-2 mt-2 ">
           <select className=" border rounded-md py-1 px-2  bg-white  focus:ring-blue-500 text-sm font-semibold">
             <option value="all">This month</option>
           </select>
-          <button className=" border rounded-md md:py-1 px-2  bg-white  focus:ring-blue-500 text-sm font-semibold ">
+          <button className=" border rounded-md py-1 px-2  bg-white  focus:ring-blue-500 text-sm font-semibold ">
             Download Logs
           </button>
         </div>
@@ -28,7 +28,7 @@ const Reports = () => {
         className="grid grid-cols-2 md:flex 
                  gap-4 mt-5 "
       >
-        <div className="md:w-1/4  min-h-24 p-2 py-2 rounded shadow bg-white   ">
+        <div className="md:w-1/4  min-h-24 p-2 py-2 rounded-md shadow bg-white   ">
           <div className=" p-1">
             <h1 className="text-sm text-black/50 font-semibold">
               Avg Coures Completion
@@ -40,7 +40,7 @@ const Reports = () => {
           </div>
         </div>
 
-        <div className="md:w-1/4  min-h-24 p-2 py-2 rounded shadow bg-white   ">
+        <div className="md:w-1/4  min-h-24 p-2 py-2 rounded-md  shadow bg-white   ">
           <div className=" p-1">
             <h1 className="text-sm text-black/50 font-semibold">
               Avg Student Score
@@ -52,7 +52,7 @@ const Reports = () => {
           </div>
         </div>
 
-        <div className="md:w-1/4  min-h-24 p-2 py-2 rounded shadow bg-white   ">
+        <div className="md:w-1/4  min-h-24 p-2 py-2 rounded-md  shadow bg-white   ">
           <div className=" p-1">
             <h1 className="text-sm text-black/50 font-semibold">
               Avg Sessions Attendance
@@ -64,7 +64,7 @@ const Reports = () => {
           </div>
         </div>
 
-        <div className="md:w-1/4  min-h-24 p-2 py-2 rounded shadow bg-white   ">
+        <div className="md:w-1/4  min-h-24 p-2 py-2 rounded-md  shadow bg-white   ">
           <div className=" p-1">
             <h1 className="text-sm text-black/50 font-semibold">
               Total Downloads
@@ -78,23 +78,32 @@ const Reports = () => {
       </section>
 
       <div className="mt-4">
-        <div className="flex gap-2">
+        <div className="flex gap-2 text-black/70">
           <button
-            className={`mt-4  text-sm font-semibold 2 pb-2 ${
-              show ? "border-b-2 border-blue-400 " : ""
+            className={`mt-4  text-sm font-bold  pb-2 p-1 
+            ${
+              active === "students"
+                ? "text-blue-500 border-b-2 border-blue-400 "
+                : ""
+            }
             }`}
-            onClick={() => setShow(!show)}
+            onClick={() => setActive("students")}
           >
             Student Progress
           </button>
           <button
-            className="mt-4  text-sm font-semibold   pb-2"
-            onClick={() => setShow(!show)}
+            className={`mt-4  text-sm font-bold p-1  pb-2 
+             ${
+               active === "Trainer"
+                 ? "text-blue-500 border-b-2 border-blue-400 "
+                 : ""
+             }`}
+            onClick={() => setActive("Trainer")}
           >
             Trainer Performance
           </button>
         </div>
-        {show ? (
+        {active === "students" && (
           <div className=" overflow-x-auto max-h-60  p-4 rounded bg-white pb-6 mt-4">
             <table className="min-w-[700px] md:w-full table-fixed  ">
               <thead>
@@ -148,7 +157,8 @@ const Reports = () => {
               </tbody>
             </table>
           </div>
-        ) : (
+        )}
+        {active === "Trainer" && (
           <div className=" overflow-x-auto max-h-60  p-4 rounded bg-white pb-6 mt-4">
             <table className="min-w-[700px] md:w-full table-fixed  ">
               <thead>

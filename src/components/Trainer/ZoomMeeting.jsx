@@ -9,7 +9,7 @@ const ZoomMeeting = () => {
     <div className="flex justify-center ">
       <div className="min-h-screen w-full  max-w-5xl pb-4 ">
         <h1 className="text-xl font-bold">Zoom Meetings</h1>
-        <p className="text-xs  md:text-sm text-black/50 font-semibold">
+        <p className="text-sm text-black/50 font-semibold">
           Schedule and manage your your live sessions
         </p>
         <div className="flex flex-col md:flex-row gap-4 mt-4">

@@ -69,7 +69,7 @@ const Footer = () => {
           </ul>
           <div className="mt-2">
             <h2 className="md:text-md text-sm font-bold">Follow Us</h2>
-            <div className="flex md:gap-2 gap-1  py-2">
+            <div className="flex md:gap-2 gap-2  py-2">
               <div>
                 <FaFacebook />
               </div>

@@ -12,7 +12,7 @@ const Course = () => {
           <div className="flex justify-between items-center  ">
             <div className="">
               <h1 className="font-bold text-xl ">My Courses</h1>
-              <p className="text-gray-500 text-sm ">
+              <p className="text-gray-500 text-sm font-semibold ">
                 Mange and create your courses
               </p>
             </div>

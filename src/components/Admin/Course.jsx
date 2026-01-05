@@ -4,15 +4,15 @@ const Course = () => {
   return (
     <div className="justify-center   w-full ">
       <div className=" max-w-5xl mx-auto ">
-        <div className="flex justify-between itemse-center">
+        <div className="flex justify-between items-center ">
           <div>
-            <h1 className="md:text-xl  font-bold">Courses Management</h1>
-            <p className="text-xs  font-semibold text-gray-500">
+            <h1 className="text-xl  font-bold">Courses Management</h1>
+            <p className="text-sm font-semibold text-gray-500">
               Manage all courses and content
             </p>
           </div>
           <div>
-            <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1.5 md:p-2 rounded  text-xs md:text-sm text-white">
+            <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1 py-1.5 md:p-2 rounded  text-xs md:text-sm text-white">
               View full Report
             </button>
           </div>

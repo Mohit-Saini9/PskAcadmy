@@ -8,11 +8,11 @@ const Courses = () => {
   return (
     <div className=" flex justify-center w-full  mx-auto  ">
       <div
-        className="max-w-5xl w-full mt-6 
-        grid  
-       sm:grid-cols-2  md:grid-cols-3  gap-4 md:gap-10  border-l-indigo-600 mx-auto "
+        className="max-w-5xl w-full md:mt-4 
+        grid  grid-cols-1
+       sm:grid-cols-2  md:grid-cols-3  gap-4 md:gap-10  border-l-indigo-600 mx-auto  "
       >
-        <div className="rounded shadow bg-white max-w-72  w-full   mt-4">
+        <div className="rounded shadow bg-white md:max-w-72  w-full   mt-4 mx-auto">
           <iframe
             src="https://www.youtube.com/embed/xomWdliKKK0?si=RVy5TNRZlleZI8x4"
             title="YouTube video player"
@@ -20,7 +20,7 @@ const Courses = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-            className="rounded-t w-full max-w-72 "
+            className="rounded-t w-full  md:max-w-72 "
           ></iframe>
           <span></span>
           <div className="p-3">
@@ -40,7 +40,7 @@ const Courses = () => {
             </div>
           </div>
         </div>
-        <div className="rounded shadow bg-white min-h-60 w-full max-w-72  mt-4">
+        <div className="rounded shadow bg-white min-h-60 w-full  md:max-w-72  mt-4 mx-auto">
           <iframe
             src="https://www.youtube.com/embed/qx9hW8IgLEc?si=JlADwH2qiRmDZxR2"
             title="YouTube video player"
@@ -48,7 +48,7 @@ const Courses = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-            className="rounded-t  w-full max-w-72 "
+            className="rounded-t  w-full  md:max-w-72 "
           ></iframe>
           <span></span>
           <div className="p-3">
@@ -68,7 +68,7 @@ const Courses = () => {
             </div>
           </div>
         </div>
-        <div className="rounded shadow bg-white  max-w-72 w-full   mt-4">
+        <div className="rounded shadow bg-white  md:max-w-72 w-full   mt-4 mx-auto">
           <iframe
             src="https://www.youtube.com/embed/NgD4S6BfjNo?si=tqdGaV_nsBiIO-8y"
             title="YouTube video player"
@@ -76,7 +76,7 @@ const Courses = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-            className="rounded-t  w-full max-w-72 "
+            className="rounded-t  w-full  md:max-w-72 "
           ></iframe>
           <span></span>
           <div className="p-3">

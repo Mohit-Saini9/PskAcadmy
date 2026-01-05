@@ -7,7 +7,7 @@ const Announcement = () => {
   return (
     <div className="  w-full max-w-5xl justify-center mx-auto ">
       <h1 className="font-bold text-xl">Announcements 7 Live Sessions</h1>
-      <p className="text-xs md:text-sm text-black/60 font-semibold">
+      <p className="text-sm text-black/60 font-semibold">
         Communicate with your students and schedule live sessions
       </p>
       <div className="flex flex-col md:flex-row gap-4 mt-6  ">

@@ -4,7 +4,7 @@ const Certificate = () => {
       <div className="flex justify-between itemse-center">
         <div>
           <h1 className="text-xl  font-bold">Certificate Management</h1>
-          <p className="text-xs  text-gray-500 font-semibold">
+          <p className="text-sm  text-gray-500 font-semibold">
             Manage certificates, templates, and verification
           </p>
         </div>

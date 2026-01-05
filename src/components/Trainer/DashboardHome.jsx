@@ -35,8 +35,8 @@ const DashboardHome = () => {
             {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
           </button>
           <div className="flex justify-between    ">
-            <h1 className="items-center    px-4 p-3 md:p-2   sm:text-xs md:text-xl bg-white h-12 font-medium  ">
-              Welcome back,Aman
+            <h1 className="items-center    px-4 p-3    sm:text-md md:text-xl bg-white h-14 font-medium  ">
+              Welcome back
             </h1>
             <div className="flex gap-2 ">
               <button

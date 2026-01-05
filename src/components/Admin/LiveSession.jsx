@@ -9,7 +9,7 @@ const LiveSession = () => {
         <div className="flex justify-between itemse-center">
           <div>
             <h1 className="text-xl  font-bold">Live Sessions Management</h1>
-            <p className="text-xs  text-gray-500 font-semibold">
+            <p className="text-sm text-gray-500 font-semibold">
               Schedule And manage live training sessions
             </p>
           </div>

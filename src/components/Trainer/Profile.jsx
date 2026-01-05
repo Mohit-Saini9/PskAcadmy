@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRegSave, FaStar } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 import { IoCameraSharp } from "react-icons/io5";
@@ -7,7 +6,7 @@ const Profile = () => {
   return (
     <div className="w-full md:max-w-5xl mx-auto ">
       <h1 className="text-xl font-bold px-2">Edit Profile</h1>
-      <p className="text-xs  md:text-sm text-black/50 font-semibold px-2">
+      <p className="text-sm text-black/50 font-semibold px-2">
         Update your personal information
       </p>
       <form className="min-h-60  p-2 mt-4 space-y-3">

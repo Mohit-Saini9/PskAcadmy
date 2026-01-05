@@ -6,13 +6,13 @@ const Conetent = () => {
     <div>
       <div className="flex justify-between itemse-center">
         <div>
-          <h1 className="md:text-xl  font-bold">Content & Downloads</h1>
-          <p className="text-xs  text-gray-500 font-semibold">
+          <h1 className="text-xl  font-bold">Content & Downloads</h1>
+          <p className="text-sm  text-gray-500 font-semibold">
             Manage course content ,videos, and download settings
           </p>
         </div>
         <div>
-          <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1.5 px-2 rounded  text-xs md:text-sm text-white">
+          <button className="flex items-center md:gap-1 bg-blue-500 hover:bg-blue-700 hover:scale-105 p-1.5 px-4 rounded  text-xs md:text-sm text-white">
             Upload Content
           </button>
         </div>
@@ -199,7 +199,7 @@ const Conetent = () => {
       <div className="shadow bg-white mt-4 rounded pb-2">
         <h1 className="p-2 px-4 font-semibold">Download Settings</h1>
         <hr className="" />
-        <div className=" px-4 p-2  space-y-2">
+        <div className=" px-4 p-2  space-y-3">
           <div className="flex items-center gap-2">
             <input type="checkbox" />
             <p className="text-xs  font-semibold text-black/90 items-center">

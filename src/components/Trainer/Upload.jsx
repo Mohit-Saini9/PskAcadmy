@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { FaFileUpload } from "react-icons/fa";
+
 import { FiUpload } from "react-icons/fi";
 
 const Upload = () => {

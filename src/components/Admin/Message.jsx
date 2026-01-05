@@ -6,7 +6,7 @@ const Message = () => {
       <div className="flex justify-between itemse-center">
         <div>
           <h1 className="text-xl  font-bold">Messages & Announcements</h1>
-          <p className="text-xs  text-gray-500 font-semibold">
+          <p className="text-sm  text-gray-500 font-semibold">
             Send announcements and manage conversations
           </p>
         </div>

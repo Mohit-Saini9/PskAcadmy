@@ -33,7 +33,7 @@ const DashbordHome = () => {
             {open ? <IoMdClose size={25} /> : <FaBars size={25} />}
           </button>
           <div className="flex justify-between items-center  ">
-            <h1 className="w-full items-center md:px-4  sm:p-4  p-3.5 px-2  text-xl md:p-2 md:text-xl bg-white h-12 font-medium  ">
+            <h1 className="w-full items-center md:px-4  sm:p-4  p-3.5 px-2  text-xl md:p-3 md:text-xl bg-white h-14 font-medium  ">
               Student Dashboard
             </h1>
 

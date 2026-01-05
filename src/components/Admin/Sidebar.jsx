@@ -80,8 +80,8 @@ const SideBar = ({ setOpen }) => {
         >
           <div className={`flex flex-col gap-3  w-full `}>
             <div className="flex justify-between text-white ">
-              <div className="flex gap-3  items-center md:p-2">
-                <div className="bg-blue-800 p-1  rounded size-8  text-center text-white">
+              <div className="flex gap-3  items-center p-2 mt-4 md:mt-0">
+                <div className="bg-blue-800 p-1  rounded size-8  text-center text-white ">
                   L
                 </div>
                 <div className="   ">
