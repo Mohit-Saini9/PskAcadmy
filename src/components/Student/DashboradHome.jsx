@@ -17,17 +17,19 @@ const DashbordHome = () => {
   return (
     <div className=" bg-slate-50 flex   min-h-screen overflow-y-auto    ">
       <aside
-        className={`fixed max-w-64  md:flex ${
-          open ? "z-50 absolute  " : " hidden  md:flex   h-full"
+        className={`fixed max-w-64  md:flex  ${
+          open ? "z-50  " : " hidden  md:flex   h-full"
         }`}
       >
-        <SideBar setOpen={setOpen} />
+        <SideBar setOpen={setOpen} open={open} />
       </aside>
 
       <div className="md:ml-56 justify-center  bg-white/20 w-full md:pl-2 ">
         <div className=" flex shadow bg-white fixed w-full  ">
           <button
-            className=" md:hidden  text-xl p-2 "
+            className={` md:hidden  text-xl p-2
+             
+            `}
             onClick={() => setOpen(!open)}
           >
             {open ? <IoMdClose size={30} /> : <FaBars size={30} />}

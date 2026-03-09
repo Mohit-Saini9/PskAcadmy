@@ -35,8 +35,8 @@ const SideBar = ({ setOpen }) => {
     <div className="h-screen bg-slate-50 ">
       <div className=" flex flex-col md:flex ">
         <aside
-          className={` flex  w-48 md:w-56  shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-white  transform transition-transform duration-300 ease-in-out
-            
+          className={` flex  w-48 md:w-56  shadow-md  h-screen sm:flex md:flex-col p-4 gap-6 text-md font-medium text-black/80 bg-white  transform transition-transform duration-300 ease-in-out 
+            ${open ? "translate-x-0" : "-translate-x-full"} 
           `}
         >
           <div className={`flex flex-col gap-4 w-full `}>
