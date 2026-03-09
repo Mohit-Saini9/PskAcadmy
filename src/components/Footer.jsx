@@ -13,7 +13,7 @@ const Footer = () => {
       className="min-h-60 bg-black/80  text-white  w-full mx-auto 
    "
     >
-      <div className=" w-full grid  grid-cols-2 md:grid-cols-4 gap-10 md:gap-20 max-w-5xl  mx-auto p-4">
+      <div className=" w-full grid  grid-cols-2 md:grid-cols-4 gap-10 md:gap-20 max-w-7xl  mx-auto p-4">
         <div className="p-2  max-w-xs sm:max-w-xs md:max-w-md min-h-30 text-sm ">
           <h1 className="text-xl font-bold">PSK Acadmy</h1>
           <p className="text-sm mt-2">
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border border-black/20  " />
-      <div className=" flex justify-between max-w-5xl mx-auto text-sm  items-end mt-2 py-1 pb-4">
+      <div className=" flex justify-between max-w-7xl mx-auto text-sm  items-end mt-2 py-1 pb-4">
         <div className="">2025 LMS Platform | Designed with care</div>
         <div className="flex gap-4">
           Privacy <span>Terms</span>

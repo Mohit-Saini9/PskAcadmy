@@ -52,7 +52,7 @@ const DashboardHome = () => {
             </div>
           </div>
         </div>
-        <div className="  w-full max-w-5xl  p-4  px-4 mx-auto py-20 overflow-y-auto">
+        <div className="  w-full   p-4  px-4 mx-auto py-20 overflow-y-auto">
           {pathname === "/trainer/dashbord" && <Dashbord />}
           {pathname === "/trainer/mycourse" && <Course />}
           {pathname === "/trainer/upload" && <Upload />}

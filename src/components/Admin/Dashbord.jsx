@@ -13,8 +13,8 @@ import {
 
 const Dashbord = () => {
   return (
-    <div className="flex w-full justify-center mx-auto  bg-gren-200 ">
-      <div className="md:max-5xl  w-full  mx-auto  ">
+    <div className="flex w-full justify-center mx-auto   ">
+      <div className="   w-full  mx-auto">
         <div className="flex justify-between">
           <div>
             <h1 className="text-xl  font-bold">Dashbord Overview</h1>

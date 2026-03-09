@@ -9,7 +9,7 @@ const Students = () => {
 
   return (
     <div className="flex- justify-center w-full    ">
-      <div className="flex flex-col md:flex-row gap-4  rounded max-w-5xl mx-auto   ">
+      <div className="flex flex-col md:flex-row gap-4  rounded max-w-6xl mx-auto   ">
         <div className=" flex-1 w-full md:w-[70%]  rounded shadow bg-white  p-2">
           <div className="flex items-center text-sm border-2 p-1 rounded text-gray-600">
             <MdSearch size={20} />

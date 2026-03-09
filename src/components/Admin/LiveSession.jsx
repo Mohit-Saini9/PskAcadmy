@@ -5,7 +5,7 @@ const LiveSession = () => {
 
   return (
     <div className="">
-      <div className=" max-w-5xl mx-auto">
+      <div className="  mx-auto">
         <div className="flex justify-between itemse-center">
           <div>
             <h1 className="text-xl  font-bold">Live Sessions Management</h1>

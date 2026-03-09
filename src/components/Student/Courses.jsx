@@ -8,7 +8,7 @@ const Courses = () => {
   return (
     <div className=" flex justify-center w-full  mx-auto  ">
       <div
-        className="max-w-5xl w-full md:mt-4 
+        className="max-w-6xl w-full md:mt-4 
         grid  grid-cols-1
        sm:grid-cols-2  md:grid-cols-3  gap-4 md:gap-10  border-l-indigo-600 mx-auto  "
       >

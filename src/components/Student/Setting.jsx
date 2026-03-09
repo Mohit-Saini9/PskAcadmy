@@ -8,7 +8,7 @@ const Setting = () => {
   return (
     <>
       <div className=" w-full  justify-center  min-h-screen mx-auto ">
-        <div className="w-full  max-w-5xl  text-black/80   rounded-md mx-auto  md:space-y-6 space-y-4">
+        <div className="w-full  max-w-6xl  text-black/80   rounded-md mx-auto  md:space-y-6 space-y-4">
           <h1 className="font-bold text-xl">Settings</h1>
           <div className="shadow-md p-1.5 px-4  bg-white rounded mt-2">
             <h2 className="font-bold ">Appearance</h2>

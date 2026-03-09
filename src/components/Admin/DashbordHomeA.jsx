@@ -20,19 +20,21 @@ const DashbordHomeA = () => {
   const Navigate = useNavigate();
   return (
     <div className="flex min-h-screen md:gap-1 bg-slate-50 w-full">
-      <aside className={`  fixed ${open ? " z-50 fixed  " : "hidden md:flex"}`}>
+      <aside
+        className={`  fixed max-w-64   ${open ? " z-50 fixed  " : "hidden z-50 md:flex"}`}
+      >
         <SideBar setOpen={setOpen} />
       </aside>
 
-      <div className=" flex-1 shadow  w-full">
-        <div className="flex fixed w-full top-0  bg-white shadow  z-20  px-2 gap-1">
+      <div className=" md:ml-56 flex-1 shadow  w-full ">
+        <div className="flex fixed w-full top-0  bg-white shadow  z-20  px-2 gap-1 items-center mt-6">
           <button
             className=" md:hidden  text-xl  "
             onClick={() => setOpen(!open)}
           >
             {open ? <IoMdClose size={30} /> : <FaBars size={30} />}
           </button>
-          <div className=" md:ml-56 bg-white relative md:shadow h-14 p-2 md:fixed flex items-center w-full gap-2 md:gap-4 md:px-4 rounded ">
+          <div className="  bg-white relative md:shadow h-14 p-2 md:fixed flex items-center   w-full gap-2 md:gap-4 md:px-4 rounded ">
             <div className="absolute px-1 items-center">
               <MdSearch className=" size-4 z-10   " />
             </div>
@@ -50,7 +52,7 @@ const DashbordHomeA = () => {
           </div>
         </div>
 
-        <div className=" md:ml-60 w-full max-w-5xl mx-auto  py-20  md:px-4 px-4 overflow-y-auto p-4">
+        <div className=" w-full mx-auto max-w-6xl  py-20  md:px-4 px-4  p-2">
           {pathname === "/admin/dashbord" && <Dashbord />}
           {pathname === "/admin/users" && <Users />}
           {pathname === "/admin/courses" && <Course />}

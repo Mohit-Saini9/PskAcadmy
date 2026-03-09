@@ -79,7 +79,7 @@ const Testimonial = () => {
             Join thousands of statisfied learners who transformed their careers
           </p>
         </div>
-        <div className="no-scrollbar max-w-3xl scroll-smooth overflow-x-auto  no-scrollbar mx-auto">
+        <div className="no-scrollbar max-w-6xl scroll-smooth overflow-x-auto  no-scrollbar mx-auto">
           {/* <div className=" w-full max-w-4xl md:max-w-3xl mx-auto   gap-4 px-4  flex  "></div> */}
 
           <Swiper

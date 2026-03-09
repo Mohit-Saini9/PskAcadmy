@@ -47,7 +47,7 @@ const DashbordHome = () => {
             </button>
           </div>
         </div>
-        <div className=" md:left-56  md:max-w-5xl w-full md:px-4 px-4 p-4   mx-auto  py-20 overflow-y-auto ">
+        <div className=" md:left-56   w-full md:px-4 px-4 p-4   mx-auto  py-20 overflow-y-auto ">
           {pathname === "/student/dashbord" && <Dashbord />}
           {pathname === "/student/my-course" && <Courses />}
           {pathname === "/student/profile" && <Profile />}

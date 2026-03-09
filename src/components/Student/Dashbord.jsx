@@ -5,7 +5,7 @@ import { MdMenuBook } from "react-icons/md";
 const Dashbord = () => {
   return (
     <div className="w-full flex justify-center  mx-auto ">
-      <div className="w-full  max-w-5xl mx-auto ">
+      <div className="w-full  max-w-6xl mx-auto ">
         <div className="text-2xl px-4">Welcome Back!</div>
         <p className="text-base text-black/40 font-semibold mt-2 px-4">
           Continue your learning journey

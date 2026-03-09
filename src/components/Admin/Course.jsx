@@ -3,7 +3,7 @@ import { MdSearch } from "react-icons/md";
 const Course = () => {
   return (
     <div className="justify-center   w-full ">
-      <div className=" max-w-5xl mx-auto ">
+      <div className="  mx-auto ">
         <div className="flex justify-between items-center ">
           <div>
             <h1 className="text-xl  font-bold">Courses Management</h1>
